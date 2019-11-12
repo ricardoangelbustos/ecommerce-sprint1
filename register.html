@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <!--INSERTAR LOGO AQUI-->
+            </div>
+            <div class="page-name">
+                <!--ESPACIO PARA EL NOMBRE DE LA PAGINA-->
+            </div>
+            <div class="help">
+                <h3>
+                    <a href="#">AYUDA</a>
+                </h3>
+            </div>
+        </div>
+        <br>
+        <div class="title">
+            <h1>
+                COMPLETA TUS DATOS
+            </h1>
+        </div>
+        <div class="register">
+            <form action="" method="POST">
+                <br>
+                <div class="names">
+                    <input id="name" type="text" name="name" value="" placeholder="NOMBRE" required>
+                    <input id="surname" type="text" name="surname" value="" placeholder="APELLIDO" required>
+                </div>
+                <br>
+                <div class="age-gender">
+                    <select name="age" id="age">
+                        <option value="" disabled selected>
+                            Selecciona tu edad
+                        </option>
+                        <option value="18">
+                            18
+                        </option>
+                        <option value="19">
+                            19
+                        </option>
+                        <option value="20">
+                            20
+                        </option>
+                        <option value="21">
+                            21
+                        </option>
+                        <option value="22">
+                            22
+                        </option>
+                    </select>
+                    <select name="gender" id="gender">
+                        <option value="" disabled selected>
+                            Selecciona tu sexo
+                        </option>
+                        <option value="men">
+                            Hombre
+                        </option>
+                        <option value="women">
+                            Mujer
+                        </option>
+                        <option value="other">
+                            Otro
+                        </option>
+                    </select>
+                </div>
+                <br>
+                <div class="email">
+                    <input id="email" type="email" name="email" value="" placeholder="EMAIL" required>
+                </div>
+                <br>
+                <div class="pass">
+                    <input id="password" type="password" name="password" value="" placeholder="CONTRASEÑA" required>
+                    <input id="password" type="password" name="password" value="" placeholder="REPETIR CONTRASEÑA" required>
+                </div>
+                <br>
+                <div class="checkboxes-button">
+                    <input type="checkbox" name="terms" value="yes-terms">     Acepto los terminos y condiciones <br><br>
+                    <input type="checkbox" name="terms" value="yes-promo">     Deseo recibir actualizaciones y ofertas
+                    <button>ENVIAR</button><!--CAMBIAR POR IMAGEN DE FLECHA-->
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

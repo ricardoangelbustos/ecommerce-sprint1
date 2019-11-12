@@ -1,0 +1,134 @@
+/*INICIA REGISTER*/
+.container{
+    /*background-color: darkorange;*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 1200px;
+    height: 800px;
+}
+.logo{
+    background-color: gray;
+    width: 100px;
+    height: 40px;
+}
+.page-name{
+    background-color: gray;
+    width: 100px;
+    height: 40px;
+}
+.help a{
+    text-decoration: none;
+    color: white;
+}
+.help a:hover{
+    transition: 500ms;
+    color: gray;
+}
+.header{
+    background-color: salmon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.header{
+    color: white;
+}
+.help{
+    margin-right: 10px;
+}
+.title{
+    font-size: 12px;
+    position: relative;
+    left: 300px;
+}
+.register{
+    background-color: #b97778;
+    width: 600px;
+    height: 380px;
+    position: relative;
+    left: 300px;
+    border-radius: 10px;
+}
+.names{
+    /*background-color: darkcyan;*/
+    width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.names input{
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #b97778;
+}
+.age-gender{
+    /*background-color: darkgoldenrod;*/
+    width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.age-gender select{
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid #b97778;
+}
+
+.email{
+    /*background-color: darkgray;*/
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.email input{
+    width: 550px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #b97778;
+}
+.pass{
+    /*background-color: darkkhaki;*/
+    width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.pass input{
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #b97778;
+}
+.checkboxes-button{
+    /*background-color: darkolivegreen;*/
+    padding-left: 20px;
+    color: white;
+}
+.checkboxes-button button{
+    position: relative;
+    left: 160px;
+    bottom: 30px;
+}
+/*FINALIZA REGISTER*/
+/*INICIA LOGIN*/
+/*FINALIZA LOGIN*/
