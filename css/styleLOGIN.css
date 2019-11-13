@@ -1,3 +1,8 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
 .logo img{
     width: 183px;
     height: 62px;
@@ -18,12 +23,13 @@
     border: 1px solid #b97778;
 }
 .container-login{
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    width: 80%;
+    /* margin: 0 auto; */
     height: 1111px;
 }
 .header-login{
+    width: 100%;
     background-color: rgba(62, 100, 255, 0.95);;
     display: flex;
     justify-content: space-between;
