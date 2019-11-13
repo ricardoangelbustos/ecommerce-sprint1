@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Home</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Home;
+		--web-view-id: Home;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Home;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Home {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1920px;
+		height: 3303px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Home;
+		--web-view-id: Home;
+		--web-enable-deep-linking: true;
+	}
+	.Rectangle_64 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 3469px;
+		left: 0px;
+		top: 97px;
+	}
+	.Rectangle_2 {
+		filter: drop-shadow(0px 24px 12px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 1984px;
+		height: 167px;
+		left: -12px;
+		top: -11px;
+	}
+	#LOGIN_ {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		left: 1525px;
+		top: 37px;
+		overflow: hidden;
+		width: 140px;
+		height: 32px;
+		text-align: left;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(0,0,0,1);
+	}
+	.Rectangle_3 {
+		filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 911px;
+		height: 77px;
+		left: 568px;
+		top: 42px;
+	}
+	#Icon_feather_search {
+		position: absolute;
+		width: 18.167px;
+		height: 18.167px;
+		left: 1397.5px;
+		top: 53.5px;
+		overflow: visible;
+	}
+	.Path_1 {
+		overflow: visible;
+		position: absolute;
+		width: 19.148px;
+		height: 19.148px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_2 {
+		overflow: visible;
+		position: absolute;
+		width: 8.633px;
+		height: 8.633px;
+		left: 13.776px;
+		top: 13.776px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#BUSCAR_PRODUCTOS__MARCAS_Y_MAS {
+		position: absolute;
+		left: 591px;
+		top: 50px;
+		overflow: hidden;
+		width: 821px;
+		height: 26px;
+		text-align: left;
+		font-family: SansSerif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,0,0,0.231);
+	}
+	.Rectangle_65 {
+		position: absolute;
+		overflow: visible;
+		width: 1876px;
+		height: 932px;
+		left: 21px;
+		top: 130px;
+	}
+	#Image_1 {
+		opacity: 0.81;
+	}
+	.Image_1 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.239));
+		position: absolute;
+		overflow: visible;
+		width: 1948px;
+		height: 1004px;
+		left: 22px;
+		top: 130px;
+	}
+	.Ellipse_1 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		height: 45px;
+		left: 894px;
+		top: 1017px;
+	}
+	.Ellipse_2 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		height: 45px;
+		left: 998px;
+		top: 1017px;
+	}
+	.Ellipse_3 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		height: 45px;
+		left: 963px;
+		top: 1017px;
+	}
+	.Ellipse_4 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		height: 45px;
+		left: 929px;
+		top: 1017px;
+	}
+	#Group_2 {
+		position: absolute;
+		width: 298px;
+		height: 40px;
+		left: 230px;
+		top: 36px;
+		overflow: visible;
+	}
+	#CATEGORIAS {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+		width: 257px;
+		height: 40px;
+		text-align: left;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(0,0,0,1);
+	}
+	.Icon_material_expand_more {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 56.531px;
+		height: 34.72px;
+		left: 267px;
+		top: 20px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#SING_UP {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		left: 1694px;
+		top: 36px;
+		overflow: hidden;
+		width: 191px;
+		height: 40px;
+		text-align: left;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(0,0,0,1);
+	}
+	.Logo_Version_1_0 {
+		position: absolute;
+		overflow: visible;
+		width: 183px;
+		height: 62px;
+		left: 22px;
+		top: 26px;
+	}
+	.Rectangle_66 {
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		height: 386px;
+		left: 1871px;
+		top: 404px;
+	}
+	#TENDENCIAS_ {
+		position: absolute;
+		left: 39.5px;
+		top: 1116.5px;
+		overflow: hidden;
+		width: 332px;
+		height: 72px;
+		text-align: left;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(0,0,0,1);
+	}
+	.Path_13 {
+		filter: drop-shadow(0px 24px 50px rgba(0, 0, 0, 0.259));
+		overflow: visible;
+		position: absolute;
+		width: 2000px;
+		height: 1199px;
+		left: 35px;
+		top: 1203px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Rectangle_67 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 993px;
+		height: 1121px;
+		left: 35px;
+		top: 1203px;
+	}
+	.Rectangle_70 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 956px;
+		height: 572px;
+		left: 1000px;
+		top: 1203px;
+	}
+	.Rectangle_71 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 956px;
+		height: 572px;
+		left: 1000px;
+		top: 1752px;
+	}
+	#Ultimos_lanzamientos_ {
+		position: absolute;
+		left: 39.5px;
+		top: 2295.5px;
+		overflow: hidden;
+		width: 631px;
+		height: 72px;
+		text-align: left;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(0,0,0,1);
+	}
+	.Path_12 {
+		filter: drop-shadow(0px 24px 50px rgba(0, 0, 0, 0.259));
+		overflow: visible;
+		position: absolute;
+		width: 2014px;
+		height: 709px;
+		left: 21px;
+		top: 2398px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Rectangle_72 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 444px;
+		height: 546px;
+		left: 74px;
+		top: 2433px;
+	}
+	.Rectangle_74 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 444px;
+		height: 546px;
+		left: 1469px;
+		top: 2433px;
+	}
+	.Rectangle_79 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 444px;
+		height: 546px;
+		left: 1014px;
+		top: 2433px;
+	}
+	.Rectangle_80 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 444px;
+		height: 546px;
+		left: 531px;
+		top: 2433px;
+	}
+	.Rectangle_81 {
+		position: absolute;
+		overflow: visible;
+		width: 1964px;
+		height: 281px;
+		left: -29px;
+		top: 3029px;
+	}
+	#Locales_mas_cerca__Registrate_ {
+		position: absolute;
+		left: 74.5px;
+		top: 3072.5px;
+		overflow: hidden;
+		width: 653px;
+		height: 248px;
+		text-align: left;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Noticias__Acerca_de_nosotros {
+		position: absolute;
+		left: 783px;
+		top: 3073px;
+		overflow: hidden;
+		width: 355px;
+		height: 248px;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	.Icon_awesome_twitter {
+		overflow: visible;
+		position: absolute;
+		width: 53.948px;
+		height: 43.816px;
+		left: 1803.051px;
+		top: 3068.381px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Icon_awesome_instagram {
+		overflow: visible;
+		position: absolute;
+		width: 47.231px;
+		height: 47.221px;
+		left: 1703.294px;
+		top: 3068.676px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Icon_awesome_facebook_square {
+		overflow: visible;
+		position: absolute;
+		width: 47.205px;
+		height: 47.205px;
+		left: 1581.639px;
+		top: 3068.683px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Icon_awesome_youtube {
+		overflow: visible;
+		position: absolute;
+		width: 57.545px;
+		height: 40.461px;
+		left: 1449px;
+		top: 3075.052px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Line_2 {
+		overflow: visible;
+		position: absolute;
+		width: 1850px;
+		height: 1px;
+		left: 21.5px;
+		top: 3207.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Icon_metro_location {
+		overflow: visible;
+		position: absolute;
+		width: 19.28px;
+		height: 30.849px;
+		left: 71.328px;
+		top: 3245.576px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Argentina {
+		position: absolute;
+		left: 130px;
+		top: 3246px;
+		overflow: visible;
+		width: 131px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#guias_ {
+		position: absolute;
+		left: 1272px;
+		top: 3233px;
+		overflow: visible;
+		width: 75px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(39,51,76,1);
+	}
+	#terminos_de_uso {
+		position: absolute;
+		left: 1375px;
+		top: 3233px;
+		overflow: visible;
+		width: 195px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(39,51,76,1);
+	}
+	#politica_de_privacidad {
+		position: absolute;
+		left: 1598px;
+		top: 3233px;
+		overflow: visible;
+		width: 271px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,0,0,0.302);
+	}
+	.Image_2 {
+		filter: drop-shadow(0px 12px 42px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 1047px;
+		height: 1175px;
+		left: 35px;
+		top: 1203px;
+	}
+	.Image_3 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 957px;
+		height: 572px;
+		left: 1000px;
+		top: 1203px;
+	}
+	.Image_4 {
+		filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 957px;
+		height: 572px;
+		left: 1000px;
+		top: 1752px;
+	}
+	#mas_informacion {
+		position: absolute;
+		left: 23px;
+		top: 2185px;
+		overflow: hidden;
+		width: 478px;
+		height: 94px;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(39,51,76,0.529);
+	}
+	.Image_5 {
+		position: absolute;
+		overflow: visible;
+		width: 343px;
+		height: 343px;
+		left: 88px;
+		top: 2460px;
+	}
+	#Remera_x {
+		position: absolute;
+		left: 150px;
+		top: 2824px;
+		overflow: visible;
+		width: 221px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(39,51,76,1);
+	}
+	.Image_6 {
+		position: absolute;
+		overflow: visible;
+		width: 370px;
+		height: 370px;
+		left: 531px;
+		top: 2436px;
+	}
+	#buzo_x {
+		position: absolute;
+		left: 634px;
+		top: 2824px;
+		overflow: visible;
+		width: 165px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(39,51,76,1);
+	}
+	.Image_7 {
+		position: absolute;
+		overflow: visible;
+		width: 361px;
+		height: 361px;
+		left: 1020px;
+		top: 2450px;
+	}
+	#Pantalon_x {
+		position: absolute;
+		left: 1064px;
+		top: 2824px;
+		overflow: visible;
+		width: 275px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(39,51,76,1);
+	}
+	.Image_8 {
+		position: absolute;
+		overflow: visible;
+		width: 334px;
+		height: 334px;
+		left: 1494px;
+		top: 2438px;
+	}
+	#zapatilla_x {
+		position: absolute;
+		left: 1518px;
+		top: 2824px;
+		overflow: visible;
+		width: 275px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Lemon/Milk;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(39,51,76,1);
+	}
+</style>
+</head>
+<body>
+<div id="Home" class="">
+	<svg class="Rectangle_64">
+		<rect fill="rgba(236,252,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_64" rx="0" ry="0" x="0" y="0" width="1920" height="3469">
+		</rect>
+	</svg>
+	<svg class="Rectangle_2">
+		<rect fill="rgba(62,100,255,0.949)" stroke="rgba(0,0,0,0.369)" stroke-width="4px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1948" height="125">
+		</rect>
+	</svg>
+	<div id="LOGIN_">
+		<span>LOGIN </span>
+	</div>
+	<svg class="Rectangle_3">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,0)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_3" rx="20.5" ry="20.5" x="0" y="0" width="875" height="41">
+		</rect>
+	</svg>
+	<div id="Icon_feather_search">
+		<svg class="Path_1" viewBox="4.5 4.5 16.148 16.148">
+			<path fill="transparent" stroke="rgba(0,0,0,0.271)" stroke-width="3px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_1" d="M 20.64813804626465 12.57406902313232 C 20.64813804626465 17.03325462341309 17.03325462341309 20.64813804626465 12.57406902313232 20.64813804626465 C 8.114883422851563 20.64813804626465 4.5 17.03325462341309 4.5 12.57406902313232 C 4.5 8.114883422851563 8.114884376525879 4.5 12.57406902313232 4.5 C 17.03325462341309 4.5 20.64813804626465 8.114884376525879 20.64813804626465 12.57406902313232 Z">
+			</path>
+		</svg>
+		<svg class="Path_2" viewBox="24.975 24.975 4.39 4.39">
+			<path fill="transparent" stroke="rgba(0,0,0,0.271)" stroke-width="3px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_2" d="M 29.36527442932129 29.36527442932129 L 24.97500038146973 24.97500038146973">
+			</path>
+		</svg>
+	</div>
+	<div id="BUSCAR_PRODUCTOS__MARCAS_Y_MAS">
+		<span>BUSCAR PRODUCTOS, MARCAS Y MAS</span>
+	</div>
+	<svg class="Rectangle_65">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_65" rx="10" ry="10" x="0" y="0" width="1876" height="932">
+		</rect>
+	</svg>
+	<svg class="Image_1">
+		<pattern elementId="Image_1_A0_Rectangle_6" id="Image_1_A0_Rectangle_6_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Image_1_A0_Rectangle_6_pattern.png" xlink:href="Image_1_A0_Rectangle_6_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Image_1_A0_Rectangle_6_pattern)" stroke="rgba(112,112,112,0.98)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Image_1" rx="10" ry="10" x="0" y="0" width="1876" height="932">
+		</rect>
+	</svg>
+	<svg class="Ellipse_1">
+		<ellipse fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_1" rx="13.5" ry="13.5" cx="13.5" cy="13.5">
+		</ellipse>
+	</svg>
+	<svg class="Ellipse_2">
+		<ellipse fill="rgba(255,255,255,0)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_2" rx="13.5" ry="13.5" cx="13.5" cy="13.5">
+		</ellipse>
+	</svg>
+	<svg class="Ellipse_3">
+		<ellipse fill="rgba(255,255,255,0)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_3" rx="13.5" ry="13.5" cx="13.5" cy="13.5">
+		</ellipse>
+	</svg>
+	<svg class="Ellipse_4">
+		<ellipse fill="rgba(255,255,255,0)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_4" rx="13.5" ry="13.5" cx="13.5" cy="13.5">
+		</ellipse>
+	</svg>
+	<div id="Group_2">
+		<div id="CATEGORIAS">
+			<span>CATEGORIAS</span>
+		</div>
+		<svg class="Icon_material_expand_more" viewBox="9 12.885 31 12">
+			<path fill="rgba(0,0,0,1)" stroke="rgba(0,0,0,1)" stroke-width="4px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Icon_material_expand_more" d="M 36.35749816894531 12.88500022888184 L 24.5 20.302001953125 L 12.64249992370605 12.88500022888184 L 9 15.16840076446533 L 24.5 24.8849983215332 L 40 15.16840076446533 L 36.35749816894531 12.88500022888184 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="SING_UP">
+		<span>SING UP</span>
+	</div>
+	<svg class="Logo_Version_1_0">
+		<pattern elementId="Logo_Version_1_0_A0_Rectangle_8" id="Logo_Version_1_0_A0_Rectangle_8_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Logo_Version_1_0_A0_Rectangle_8_pattern.png" xlink:href="Logo_Version_1_0_A0_Rectangle_8_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Logo_Version_1_0_A0_Rectangle_8_pattern)" id="Logo_Version_1_0" rx="0" ry="0" x="0" y="0" width="183" height="62">
+		</rect>
+	</svg>
+	<svg class="Rectangle_66">
+		<rect fill="rgba(255,255,255,0.459)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_66" rx="7" ry="7" x="0" y="0" width="14" height="386">
+		</rect>
+	</svg>
+	<div id="TENDENCIAS_">
+		<span>TENDENCIAS</span><br>
+	</div>
+	<svg class="Path_13" viewBox="0 0 1850 1049">
+		<path fill="rgba(178,252,255,0.278)" stroke="rgba(112,112,112,0.102)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_13" d="M 25 0 L 1825 0 C 1838.80712890625 0 1850 21.00417137145996 1850 46.91413497924805 L 1850 1002.085876464844 C 1850 1027.995849609375 1838.80712890625 1049 1825 1049 L 25 1049 C 11.19288063049316 1049 0 1027.995849609375 0 1002.085876464844 L 0 46.91413497924805 C 0 21.00417137145996 11.19288063049316 0 25 0 Z">
+		</path>
+	</svg>
+	<svg class="Rectangle_67">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_67" rx="20" ry="20" x="0" y="0" width="921" height="1049">
+		</rect>
+	</svg>
+	<svg class="Rectangle_70">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_70" rx="20" ry="20" x="0" y="0" width="884" height="500">
+		</rect>
+	</svg>
+	<svg class="Rectangle_71">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_71" rx="20" ry="20" x="0" y="0" width="884" height="500">
+		</rect>
+	</svg>
+	<div id="Ultimos_lanzamientos_">
+		<span>Ultimos lanzamientos</span><br>
+	</div>
+	<svg class="Path_12" viewBox="0 0 1864 559">
+		<path fill="rgba(178,252,255,0.278)" stroke="rgba(112,112,112,0.102)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_12" d="M 25.18918800354004 0 L 1838.810791015625 0 C 1852.722290039063 0 1863.999877929688 11.19288063049316 1863.999877929688 25 L 1863.999877929688 534 C 1863.999877929688 547.80712890625 1852.722290039063 559 1838.810791015625 559 L 25.18918800354004 559 C 11.27758312225342 559 0 547.80712890625 0 534 L 0 25 C 0 11.19288063049316 11.27758312225342 0 25.18918800354004 0 Z">
+		</path>
+	</svg>
+	<svg class="Rectangle_72">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_72" rx="20" ry="20" x="0" y="0" width="372" height="474">
+		</rect>
+	</svg>
+	<svg class="Rectangle_74">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_74" rx="20" ry="20" x="0" y="0" width="372" height="474">
+		</rect>
+	</svg>
+	<svg class="Rectangle_79">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_79" rx="20" ry="20" x="0" y="0" width="372" height="474">
+		</rect>
+	</svg>
+	<svg class="Rectangle_80">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_80" rx="20" ry="20" x="0" y="0" width="372" height="474">
+		</rect>
+	</svg>
+	<svg class="Rectangle_81">
+		<rect fill="rgba(57,74,109,1)" stroke="rgba(0,0,0,1)" stroke-width="5px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_81" rx="0" ry="0" x="0" y="0" width="1964" height="281">
+		</rect>
+	</svg>
+	<div id="Locales_mas_cerca__Registrate_">
+		<span>Locales mas cerca<br/><br/>Registrate para recibir novedades</span>
+	</div>
+	<div id="Noticias__Acerca_de_nosotros">
+		<span>Noticias<br/><br/>Acerca de nosotros</span>
+	</div>
+	<svg class="Icon_awesome_twitter" viewBox="0 3.381 53.949 43.816">
+		<path fill="rgba(255,255,255,1)" id="Icon_awesome_twitter" d="M 48.40320205688477 14.30052471160889 C 48.43744659423828 14.77974033355713 48.43744659423828 15.25906276702881 48.43744659423828 15.73827838897705 C 48.43744659423828 30.3549976348877 37.31230545043945 47.19688415527344 16.97878837585449 47.19688415527344 C 10.71441173553467 47.19688415527344 4.895111560821533 45.38254547119141 -9.5367431640625e-07 42.23339462280273 C 0.8900481462478638 42.33602523803711 1.745746970176697 42.37026596069336 2.670040845870972 42.37026596069336 C 7.838900566101074 42.37026596069336 12.59713745117188 40.6245231628418 16.39683723449707 37.64638519287109 C 11.53597068786621 37.54365539550781 7.462418556213379 34.36015701293945 6.058907985687256 29.97851181030273 C 6.743593215942383 30.08114242553711 7.428174018859863 30.14963150024414 8.147103309631348 30.14963150024414 C 9.139781951904297 30.14963150024414 10.13256549835205 30.01265144348145 11.05675411224365 29.77314949035645 C 5.990523815155029 28.74612426757813 2.190719127655029 24.29609489440918 2.190719127655029 18.92177581787109 L 2.190719127655029 18.7849006652832 C 3.662614107131958 19.60645866394043 5.374327659606934 20.11992073059082 7.188460350036621 20.18830299377441 C 4.210320472717285 18.20284461975098 2.259209156036377 14.81398105621338 2.259209156036377 10.9800443649292 C 2.259209156036377 8.926201820373535 2.806810140609741 7.043477058410645 3.765348672866821 5.400361061096191 C 9.208166122436523 12.10969924926758 17.38951683044434 16.49123954772949 26.56343841552734 16.97056007385254 C 26.39232063293457 16.14900207519531 26.28958320617676 15.29330348968506 26.28958320617676 14.43750095367432 C 26.28958320617676 8.344250679016113 31.21894264221191 3.380763292312622 37.34634017944336 3.380763292312622 C 40.52984237670898 3.380763292312622 43.40525054931641 4.715782165527344 45.42495346069336 6.872359275817871 C 47.92377471923828 6.393142700195313 50.31996154785156 5.468851089477539 52.44240188598633 4.202322006225586 C 51.6207389831543 6.769730567932129 49.87499237060547 8.926307678222656 47.58153533935547 10.29546546936035 C 49.80661010742188 10.05596351623535 51.96318435668945 9.439661979675293 53.94854354858398 8.583964347839355 C 52.4426155090332 10.77468013763428 50.55978012084961 12.72579002380371 48.40320205688477 14.30052185058594 Z">
+		</path>
+	</svg>
+	<svg class="Icon_awesome_instagram" viewBox="-0.005 2.238 47.232 47.221">
+		<path fill="rgba(255,255,255,1)" id="Icon_awesome_instagram" d="M 23.61574554443359 13.74130058288574 C 16.91429901123047 13.74130058288574 11.50888729095459 19.14670372009277 11.50888729095459 25.84814071655273 C 11.50888729095459 32.54957962036133 16.91429901123047 37.95498275756836 23.61574554443359 37.95498275756836 C 30.31719207763672 37.95498275756836 35.72260284423828 32.54957580566406 35.72260284423828 25.84814071655273 C 35.72260284423828 19.14670562744141 30.31719207763672 13.74130058288574 23.61574554443359 13.74130058288574 Z M 23.61574554443359 33.71916580200195 C 19.28509330749512 33.71916580200195 15.74470806121826 30.18932151794434 15.74470806121826 25.8481388092041 C 15.74470806121826 21.50695610046387 19.27455711364746 17.97711181640625 23.61574745178223 17.97711181640625 C 27.95693588256836 17.97711181640625 31.48678588867188 21.50695610046387 31.48678588867188 25.8481388092041 C 31.48678588867188 30.18932151794434 27.94640159606934 33.71916580200195 23.61574745178223 33.71916580200195 Z M 39.04171752929688 13.24606800079346 C 39.04171752929688 14.81605815887451 37.77729415893555 16.06994247436523 36.21783828735352 16.06994247436523 C 34.64784240722656 16.06994247436523 33.39395904541016 14.80552101135254 33.39395904541016 13.24606800079346 C 33.39395904541016 11.68661499023438 34.65838241577148 10.42219257354736 36.21783828735352 10.42219257354736 C 37.77729415893555 10.42219257354736 39.04171752929688 11.68661499023438 39.04171752929688 13.24606800079346 Z M 47.06027221679688 16.11209106445313 C 46.88114547729492 12.3293628692627 46.01712036132813 8.978645324707031 43.24592590332031 6.217989921569824 C 40.48526763916016 3.457335948944092 37.13454437255859 2.593314170837402 33.35181045532227 2.403650760650635 C 29.45316886901855 2.182377338409424 17.76778411865234 2.182377338409424 13.86914539337158 2.403650760650635 C 10.09694766998291 2.58277702331543 6.746222972869873 3.446798801422119 3.975028276443481 6.207452774047852 C 1.203832864761353 8.968107223510742 0.3503460586071014 12.31882572174072 0.1606826782226563 16.10155296325684 C -0.06059150770306587 20.00018882751465 -0.06059150770306587 31.68555450439453 0.1606826782226563 35.58418655395508 C 0.3398094177246094 39.36691665649414 1.203832387924194 42.71763610839844 3.975028276443481 45.47828674316406 C 6.746222972869873 48.23894119262695 10.08641052246094 49.10296630859375 13.86914539337158 49.29262542724609 C 17.76778411865234 49.51389694213867 29.45316886901855 49.51389694213867 33.35181045532227 49.29262542724609 C 37.13454437255859 49.11350250244141 40.48526763916016 48.24947738647461 43.24592971801758 45.47828674316406 C 46.00658798217773 42.71762847900391 46.87061309814453 39.36691284179688 47.06027603149414 35.58418655395508 C 47.28154754638672 31.68555068969727 47.28154754638672 20.01072311401367 47.06027603149414 16.11208724975586 Z M 42.02365112304688 39.76731872558594 C 41.20177459716797 41.83253860473633 39.6107063293457 43.42360687255859 37.53494644165039 44.25601577758789 C 34.42657089233398 45.48882675170898 27.0507640838623 45.20433044433594 23.61574554443359 45.20433044433594 C 20.18072700500488 45.20433044433594 12.79438591003418 45.47828674316406 9.69654655456543 44.25601577758789 C 7.631319522857666 43.43413925170898 6.040253162384033 41.84307479858398 5.207840919494629 39.76731872558594 C 3.975027561187744 36.6589469909668 4.259522914886475 29.28315353393555 4.259522914886475 25.84814071655273 C 4.259522914886475 22.41312980651855 3.985564708709717 15.0267972946167 5.207840919494629 11.92896366119385 C 6.029716014862061 9.863740921020508 7.62078332901001 8.272677421569824 9.69654655456543 7.44026517868042 C 12.80492210388184 6.207453727722168 20.18072700500488 6.49194860458374 23.61574554443359 6.49194860458374 C 27.0507640838623 6.49194860458374 34.43710708618164 6.217989921569824 37.53494644165039 7.44026517868042 C 39.60017013549805 8.262140274047852 41.19123840332031 9.853203773498535 42.02365112304688 11.92896366119385 C 43.25646209716797 15.03733348846436 42.97196960449219 22.41312789916992 42.97196960449219 25.84814071655273 C 42.97196960449219 29.28315353393555 43.25646209716797 36.66948699951172 42.02365112304688 39.76731872558594 Z">
+		</path>
+	</svg>
+	<svg class="Icon_awesome_facebook_square" viewBox="0 2.25 47.205 47.205">
+		<path fill="rgba(255,255,255,1)" id="Icon_awesome_facebook_square" d="M 42.14746475219727 2.25 L 5.057695865631104 2.25 C 2.264407396316528 2.25 -7.145769700400706e-07 4.514404773712158 0 7.30768871307373 L 0 44.39739608764648 C 0 47.19068145751953 2.264407634735107 49.45508575439453 5.057696342468262 49.45508575439453 L 19.51954460144043 49.45508575439453 L 19.51954460144043 33.40641021728516 L 12.88131904602051 33.40641021728516 L 12.88131904602051 25.85254287719727 L 19.51954460144043 25.85254287719727 L 19.51954460144043 20.09520721435547 C 19.51954460144043 13.54655647277832 23.41818428039551 9.929255485534668 29.38942718505859 9.929255485534668 C 32.2491340637207 9.929255485534668 35.23949432373047 10.43923950195313 35.23949432373047 10.43923950195313 L 35.23949432373047 16.8667163848877 L 31.94461822509766 16.8667163848877 C 28.69820785522461 16.8667163848877 27.68561553955078 18.88136291503906 27.68561553955078 20.94763946533203 L 27.68561553955078 25.85254287719727 L 34.9328727722168 25.85254287719727 L 33.77381896972656 33.40641021728516 L 27.68561553955078 33.40641021728516 L 27.68561553955078 49.45508575439453 L 42.14746475219727 49.45508575439453 C 44.94075012207031 49.45508575439453 47.20515823364258 47.19068145751953 47.20515823364258 44.39739608764648 L 47.20516204833984 7.307687759399414 C 47.20515823364258 4.514403820037842 44.94075012207031 2.25 42.1474609375 2.25 Z">
+		</path>
+	</svg>
+	<svg class="Icon_awesome_youtube" viewBox="1.05 4.5 57.545 40.462">
+		<path fill="rgba(255,255,255,1)" id="Icon_awesome_youtube" d="M 57.39291763305664 10.83085441589355 C 56.73109817504883 8.338890075683594 54.78114318847656 6.376296043395996 52.30529403686523 5.710262298583984 C 47.81764221191406 4.5 29.82268142700195 4.5 29.82268142700195 4.5 C 29.82268142700195 4.5 11.82782077789307 4.5 7.34006404876709 5.710263252258301 C 4.864216327667236 6.376402854919434 2.91426420211792 8.33889102935791 2.252443790435791 10.83085632324219 C 1.049976587295532 15.34768676757813 1.049976587295532 24.77163505554199 1.049976587295532 24.77163505554199 C 1.049976587295532 24.77163505554199 1.049976587295532 34.19558334350586 2.252443790435791 38.71241760253906 C 2.91426420211792 41.20438385009766 4.864216327667236 43.08520889282227 7.34006404876709 43.75124359130859 C 11.82782077789307 44.96150207519531 29.82268142700195 44.96150207519531 29.82268142700195 44.96150207519531 C 29.82268142700195 44.96150207519531 47.81753921508789 44.96150207519531 52.30529403686523 43.75123977661133 C 54.78114318847656 43.085205078125 56.73109436035156 41.20437622070313 57.39291763305664 38.7124137878418 C 58.59538269042969 34.19558334350586 58.59538269042969 24.77163505554199 58.59538269042969 24.77163505554199 C 58.59538269042969 24.77163505554199 58.59538269042969 15.34768867492676 57.39291763305664 10.8308572769165 Z M 23.93731498718262 33.3278694152832 L 23.93731498718262 16.21539688110352 L 38.97753143310547 24.7718448638916 L 23.93731689453125 33.32787322998047 Z">
+		</path>
+	</svg>
+	<svg class="Line_2" viewBox="0 0 1850 1">
+		<path fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_2" d="M 0 0 L 1850 0">
+		</path>
+	</svg>
+	<svg class="Icon_metro_location" viewBox="8.355 1.928 19.28 30.849">
+		<path fill="rgba(255,255,255,1)" id="Icon_metro_location" d="M 17.99496841430664 1.928033471107483 C 12.67082405090332 1.928033471107483 8.354801177978516 6.244056701660156 8.354801177978516 11.56820106506348 C 8.354801177978516 21.2083683013916 17.99496841430664 32.77656936645508 17.99496841430664 32.77656936645508 C 17.99496841430664 32.77656936645508 27.63513565063477 21.2083683013916 27.63513565063477 11.56820106506348 C 27.63513565063477 6.244057178497314 23.31905174255371 1.928033828735352 17.99496841430664 1.928033828735352 Z M 17.99496841430664 17.47280311584473 C 14.73394107818604 17.47280311584473 12.09036636352539 14.82922840118408 12.09036636352539 11.56820106506348 C 12.09036636352539 8.307173728942871 14.73394107818604 5.663598537445068 17.99496841430664 5.663598537445068 C 21.25599670410156 5.663598537445068 23.89957046508789 8.307173728942871 23.89957046508789 11.56820106506348 C 23.89957046508789 14.82922840118408 21.25599479675293 17.47280311584473 17.99496841430664 17.47280311584473 Z M 14.25940322875977 11.56820106506348 C 14.25940322875977 9.505114555358887 15.93188190460205 7.832635879516602 17.99496841430664 7.832635879516602 C 20.05805587768555 7.832635879516602 21.73053359985352 9.505114555358887 21.73053359985352 11.56820106506348 C 21.73053359985352 13.63128757476807 20.05805587768555 15.30376625061035 17.99496841430664 15.30376625061035 C 15.93188095092773 15.30376625061035 14.25940322875977 13.63128757476807 14.25940322875977 11.56820106506348 Z">
+		</path>
+	</svg>
+	<div id="Argentina">
+		<span>Argentina</span>
+	</div>
+	<div id="guias_">
+		<span>guias </span>
+	</div>
+	<div id="terminos_de_uso">
+		<span>terminos de uso</span>
+	</div>
+	<div id="politica_de_privacidad">
+		<span>politica de privacidad</span>
+	</div>
+	<svg class="Image_2">
+		<pattern elementId="Image_2_A0_Rectangle_19" id="Image_2_A0_Rectangle_19_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Image_2_A0_Rectangle_19_pattern.png" xlink:href="Image_2_A0_Rectangle_19_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Image_2_A0_Rectangle_19_pattern)" id="Image_2" rx="20" ry="20" x="0" y="0" width="921" height="1049">
+		</rect>
+	</svg>
+	<svg class="Image_3">
+		<pattern elementId="Image_3_A0_Rectangle_21" id="Image_3_A0_Rectangle_21_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Image_3_A0_Rectangle_21_pattern.png" xlink:href="Image_3_A0_Rectangle_21_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Image_3_A0_Rectangle_21_pattern)" id="Image_3" rx="20" ry="20" x="0" y="0" width="885" height="500">
+		</rect>
+	</svg>
+	<svg class="Image_4">
+		<pattern elementId="Image_4_A0_Rectangle_23" id="Image_4_A0_Rectangle_23_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Image_4_A0_Rectangle_23_pattern.png" xlink:href="Image_4_A0_Rectangle_23_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Image_4_A0_Rectangle_23_pattern)" id="Image_4" rx="20" ry="20" x="0" y="0" width="885" height="500">
+		</rect>
+	</svg>
+	<div id="mas_informacion">
+		<span>mas informacion</span>
+	</div>
+	<svg class="Image_5">
+		<pattern elementId="Image_5_A0_Rectangle_25" id="Image_5_A0_Rectangle_25_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Image_5_A0_Rectangle_25_pattern.png" xlink:href="Image_5_A0_Rectangle_25_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Image_5_A0_Rectangle_25_pattern)" id="Image_5" rx="0" ry="0" x="0" y="0" width="343" height="343">
+		</rect>
+	</svg>
+	<div id="Remera_x">
+		<span>Remera x</span>
+	</div>
+	<svg class="Image_6">
+		<pattern elementId="Image_6_A0_Rectangle_27" id="Image_6_A0_Rectangle_27_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Image_6_A0_Rectangle_27_pattern.png" xlink:href="Image_6_A0_Rectangle_27_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Image_6_A0_Rectangle_27_pattern)" id="Image_6" rx="50" ry="50" x="0" y="0" width="370" height="370">
+		</rect>
+	</svg>
+	<div id="buzo_x">
+		<span>buzo x</span>
+	</div>
+	<svg class="Image_7">
+		<pattern elementId="Image_7_A0_Rectangle_29" id="Image_7_A0_Rectangle_29_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Image_7_A0_Rectangle_29_pattern.png" xlink:href="Image_7_A0_Rectangle_29_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Image_7_A0_Rectangle_29_pattern)" id="Image_7" rx="0" ry="0" x="0" y="0" width="361" height="361">
+		</rect>
+	</svg>
+	<div id="Pantalon_x">
+		<span>Pantalon x</span>
+	</div>
+	<svg class="Image_8">
+		<pattern elementId="Image_8_A0_Rectangle_31" id="Image_8_A0_Rectangle_31_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Image_8_A0_Rectangle_31_pattern.png" xlink:href="Image_8_A0_Rectangle_31_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#Image_8_A0_Rectangle_31_pattern)" id="Image_8" rx="0" ry="0" x="0" y="0" width="334" height="334">
+		</rect>
+	</svg>
+	<div id="zapatilla_x">
+		<span>zapatilla x</span>
+	</div>
+</div>
+</body>
+</html>
