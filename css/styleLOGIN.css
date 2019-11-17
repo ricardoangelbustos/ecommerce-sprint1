@@ -1,3 +1,38 @@
+/* responsive */
+
+@media screen and (max-width:640px) {
+  /* reglas CSS */
+  .container-1{
+
+    width: 100%;
+
+  }
+  .h1-login h1{
+    width: 100%;
+    font-size: 25px;
+
+  }
+
+  .logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    /* width: 50%; */
+
+  }
+}
+@media screen and (max-width:1024px) and (min-width:640px) {
+  /* reglas CSS */
+  .container-1{
+    width: 50%;
+}
+}
+@media screen and (min-width:1024px) {
+  /* reglas CSS */
+  .container-1{
+    width: 50%;
+}
+}
 
 * {
   margin: 0;
@@ -7,6 +42,7 @@
     width: 183px;
     height: 62px;
 }
+
 .email{
     /*background-color: darkgray;*/
     width: 90%;
@@ -41,22 +77,24 @@
 .h1-login{
     /*background-color: darkcyan;*/
     text-align: center;
-    margin: auto;
-    width: 50%;
+    /* width: 50%; */
+    margin: 0 auto;
     position: relative;
     font-size: 20px;
     bottom: 350px;
     color: black;
 }
 .container-1{
+    overflow:hidden;
     background-color:rgb(98, 209, 236);
-    margin: auto;
-    width: 50%;
+    margin: 0 auto;
+    /* width: 50%; */
     border-radius: 20px;
     border: 4px solid white;
     padding: 4px;
     bottom: 350px;
-    position: relative;
+     box-sizing: border-box;
+     position: relative;
 
 }
 .container-1 button{
@@ -132,3 +170,246 @@
     font-size: 20px;
     color: rgba(1,1,1,0.431);
 }
+
+/*INICIA FOOTER*/
+/* The footer is fixed to the bottom of the page */
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+/* @media (max-height:800px){
+	footer { position: static; }
+}  */
+
+
+.footer-distributed{
+	background-color: #394a6d;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: -100px; /* La distancia del footer con el contenido */
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 1038px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+
+	}
+  footer { position: static; }
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+/* .footer{
+    background-color: #394a6d;
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    color: white;
+    line-height: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    position: fixed;
+	  bottom: 0;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    transition: 500ms;
+    color: black;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.brands img{
+    width: 30px;
+    margin-left: 30px;
+}
+.row2{
+
+    display: flex;
+    justify-content: space-between;
+}
+.footer-separator{
+    height: 1px;
+    width: 100%;
+    background-color:  white;
+}
+.ubication{
+    display: flex;
+    justify-content: space-between;
+}
+.terms{
+    display: flex;
+}
+.terms h4{
+    margin-left: 10px;
+    color: #8a94a9;
+} */
+/* .grey{
+    color: #8f8f8f;
+} */
+/*FINALIZA FOOTER*/
+
+/* The footer is fixed to the bottom of the page */
