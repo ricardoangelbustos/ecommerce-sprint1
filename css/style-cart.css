@@ -1,0 +1,241 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 1300px;
+    height: 1240px;
+    background-color: #e4f4f7;
+}
+/*INICIA HEADER*/
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #4469fd;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+.logo img{
+    width: 100px;
+    margin-left: 5px;
+}
+.dropdown-categories{
+    margin-left: 20px;
+    color: black;
+}
+.search{
+    margin-left: 40px;
+}
+.search input{
+    width: 700px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #4469fd;
+}
+.cart{
+    margin-left: 70px;
+    width: 30px;
+}
+.user-name{
+    margin-left: 40px;
+}
+.user-name a{
+    text-decoration: none;
+    color: black;
+}
+.user-name a:hover{
+    transition: 500ms;
+    color: white;
+}
+.account{
+    margin-left: 20px;
+}
+/*FINALIZA HEADER*/
+/*INICIA SECTION CARRITO PRINCIPAL*/
+.main-cart{
+    background-color: white;
+    margin: 60px auto;
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.titles{
+    display: flex;
+    /* background-color: red; */
+    width: 1000px;
+    height: 80px;
+    box-sizing: border-box;
+}
+.active{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.saved{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.separator{
+    background-color: black;
+    width: 1000px;
+    height: 1px;
+}
+.item{
+    /* background-color: lightblue; */
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.item img{
+    width: 70px;
+    margin-left: 40px;
+}
+.item-quantity{
+    display: flex;
+    margin-bottom: 60px;
+    width: 450px;
+    height: 40px;
+    /* background-color: brown; */
+    font-size: 15px;
+}
+.item-quantity h3{
+    margin-left: 50px;
+}
+.item-property{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 40px;
+    /*background-color: rebeccapurple; */
+    margin-top: 50px;
+    margin-left: -443px;
+    font-size: 15px;
+}
+.item-property h3{
+    margin-left: 49px;
+}
+.delete{
+    margin-right: 130px;
+}
+.free{
+    margin-right: 50px;
+}
+.continue{
+    /* background-color: greenyellow; */
+    width: 1000px;
+    height: 100px;
+}
+.continue button{
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid black;
+    color: black;
+    background-color: #d3f2f5;
+    position: relative;
+    bottom: 5px;
+    left: 680px;
+    font-weight: 800;
+    font-size: 15px;
+}
+.total{
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    box-sizing: border-box;
+}
+.total h3{
+    margin-left: 50px;
+}
+/*FINALIZA SECTION CARRITO PRINCIPAL*/
+.similar-title{
+    text-align: center;
+    color: #747c7e;
+}
+/*INICIA SECTION SIMILAR*/
+.similar{
+    /* background-color: darkgoldenrod; */
+    margin: 0 auto;
+    width: 1000px;
+    height: 300px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+.similar-product{
+    background-color: white;
+    width: 210px;
+    height: 250px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.similar-product img{
+    width: 200px;
+    height: 190px;
+    margin-top: 10px;
+}
+/*FIN SECTION SIMILAR*/
+/*INICIA FOOTER*/
+.footer{
+    background-color: #394a6d;
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    color: white;
+    line-height: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    transition: 500ms;
+    color: black;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.brands img{
+    width: 30px;
+    margin-left: 30px;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-separator{
+    height: 1px;
+    width: 100%;
+    background-color:  white;
+}
+.ubication{
+    display: flex;
+    justify-content: space-between;
+}
+.terms{
+    display: flex;
+}
+.terms h4{
+    margin-left: 10px;
+    color: #8a94a9;
+}
+/*FINALIZA FOOTER*/
+.grey{
+    color: #8f8f8f;
+}
