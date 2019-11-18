@@ -1,8 +1,16 @@
+
+* {
+
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #e4f4f7;
+}
 .container{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    width: 1300px;
-    height: 900px;
+    width: 100%;
     background-color: #e4f4f7;
 }
 /*INICIA HEADER*/
@@ -12,7 +20,6 @@
     width: 100%;
     height: 80px;
     background-color: #4469fd;
-    padding-left: 20px;
     box-sizing: border-box;
     color: white;
     justify-content: center;
@@ -22,17 +29,23 @@
 }
 /*FINALIZA HEADER*/
 /*INICIA SECTION*/
+.section{
+  background-color: #e4f4f7;
+}
 .main-about{
-    margin: 20px auto;
+
+    margin: 0 auto;
     background-color: white;
-    width: 900px;
-    height: 600px;
+    width: 50%;
+    height: auto;
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid black;
+    margin-top: 10px;
+    padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    
+
 }
 .main-about h2{
     text-align: center;
@@ -43,18 +56,198 @@
 }
 .about-brands{
     /*background-color: navy; */
-    width: 830px;
-    height: 100px;
+
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .about-brands img{
-    width: 70px;
+    width: 75%;
 }
 /*FINALIZA SECTION*/
 /*INICIA FOOTER*/
-.footer{
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+.footer-distributed{
+	background-color: #394a6d;
+	box-sizing: border-box;
+	width: 100%;
+  height: 200px;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 10px 50px 60px 60px;
+	margin-top: 10px; /* La distancia del footer con el contenido */
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 1038px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+
+	}
+  .footer-distributed{
+    height:auto;
+  }
+  footer { position: static; }
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+/* .footer{
     background-color: #394a6d;
     margin-top: 40px;
     width: 100%;
@@ -103,5 +296,5 @@
 .terms h4{
     margin-left: 10px;
     color: #8a94a9;
-}
+} */
 /*FINALIZA FOOTER*/
