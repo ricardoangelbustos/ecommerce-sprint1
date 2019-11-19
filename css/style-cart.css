@@ -1,8 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    width: 1300px;
-    height: 1240px;
+    width: 100%;
+    height: auto;
     background-color: #e4f4f7;
 }
 /*INICIA HEADER*/
@@ -136,7 +140,7 @@
     color: black;
     background-color: #d3f2f5;
     position: relative;
-    bottom: 5px;
+    bottom: -10px;
     left: 680px;
     font-weight: 800;
     font-size: 15px;
@@ -150,6 +154,7 @@
 }
 .total h3{
     margin-left: 50px;
+    margin-top: 20px;
 }
 /*FINALIZA SECTION CARRITO PRINCIPAL*/
 .similar-title{
@@ -343,4 +348,96 @@ footer{
 /*FINALIZA FOOTER*/
 .grey{
     color: #8f8f8f;
+}
+@media (max-width: 1300px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        width: auto;
+        height: 130px;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        margin-left: -30px;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .dropdown-categories{
+        margin-left: 40px;
+    }
+    .search{
+        margin-left: 40px;
+    }
+    .search input{ 
+        width: 400px;
+    }
+    .cart{
+        display: none;
+    }
+    .account{
+        display: none;
+    }
+    .main-cart{
+        width: auto;
+        height: 580px;
+    }
+    .separator{
+        width: auto;  
+    }
+    .item{
+        width: auto;
+        height: auto;
+    }
+    .item :last-child{
+        border: none;
+    }
+    .item-property{
+        width: auto;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+    .similar-title{
+        margin-top: 160px;
+    }
+    .continue{
+        width: auto;
+        /* border: 1px solid black; */
+        border-top: none;
+        text-align: center;
+        margin-left: -1300px;
+        /* background-color: royalblue; */
+
+    }
+    .total{
+        line-height: 50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .similar{
+        width: auto;
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+    .footer-distributed{
+        height: auto;
+    }
+    footer { 
+        position: static; 
+    }
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
 }
