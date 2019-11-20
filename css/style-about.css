@@ -1,6 +1,4 @@
-
 * {
-
   margin: 0;
   padding: 0;
 }
@@ -33,19 +31,18 @@ body{
   background-color: #e4f4f7;
 }
 .main-about{
-
-    margin: 0 auto;
+	margin: 0 auto;
+	margin-bottom: -150px;
     background-color: white;
     width: 50%;
     height: auto;
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid black;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-top: 20px;
     padding-left: 30px;
-    padding-right: 30px;
-
+	padding-right: 30px;
 }
 .main-about h2{
     text-align: center;
@@ -69,79 +66,67 @@ body{
 /*FINALIZA SECTION*/
 /*INICIA FOOTER*/
 footer{
-	position: fixed;
+	position: static;
 	bottom: 0;
 }
-
 .footer-distributed{
 
 	background-color: #394a6d;
 	box-sizing: border-box;
 	width: 100%;
-  height: 200px;
+  	height: 200px;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 10px 50px 200px 60px;
 	margin-top: 200px; /* La distancia del footer con el contenido */
 }
-
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
-
+.phone{
+	color: white;
+	text-decoration: none;
+}
 /* Footer left */
-
 .footer-distributed .footer-left{
 	width: 30%;
 }
-
 .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
 }
-
 /* The company logo */
-
 .footer-distributed .footer-left img{
 	width: 30%;
 }
-
 .footer-distributed h3 span{
 	color:  #e0ac1c;
 }
-
 /* Footer links */
-
 .footer-distributed .footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
 }
-
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
 }
-
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
-
 /* Footer Center */
-
 .footer-distributed .footer-center{
 	width: 35%;
 }
-
-
 .footer-distributed .footer-center i{
 	background-color:  #33383b;
 	color: #ffffff;
@@ -154,38 +139,30 @@ footer{
 	margin: 10px 15px;
 	vertical-align: middle;
 }
-
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
-
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
 	margin:0;
 }
-
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
-
 .footer-distributed .footer-center p a{
 	color:  #e0ac1c;
 	text-decoration: none;;
 }
-
-
 /* Footer Right */
-
 .footer-distributed .footer-right{
 	width: 30%;
 }
-
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
@@ -193,7 +170,6 @@ footer{
 	font-weight: normal;
 	margin: 0;
 }
-
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
@@ -201,11 +177,9 @@ footer{
 	font-weight: bold;
 	margin-bottom: 20px;
 }
-
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
-
 .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
@@ -213,25 +187,18 @@ footer{
 	cursor: pointer;
 	background-color:  #33383b;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
-
-
+/*INICIA RESPONSIVE*/
 @media (max-width: 1300px) {
-  .main-about{
-    width: 70%;
-  }
-
+	.main-about{
+    	width: 70%;
+  	}
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
 	.footer-distributed .footer-right{
@@ -241,64 +208,15 @@ footer{
 		text-align: center;
 
 	}
-  .footer-distributed{
+  	.footer-distributed{
     height:auto;
-  }
-  footer { position: static; }
+  	}
+  	footer { 
+	  position: static;
+	}
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
-
 }
-/* .footer{
-    background-color: #394a6d;
-    margin-top: 40px;
-    width: 100%;
-    height: 150px;
-    color: white;
-    line-height: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    box-sizing: border-box;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-}
-.footer a{
-    text-decoration: none;
-    color: white;
-}
-.footer a:hover{
-    transition: 500ms;
-    color: black;
-}
-.row1{
-    display: flex;
-    justify-content: space-between;
-}
-.brands img{
-    width: 30px;
-    margin-left: 30px;
-}
-.row2{
-    display: flex;
-    justify-content: space-between;
-}
-.footer-separator{
-    height: 1px;
-    width: 100%;
-    background-color:  white;
-}
-.ubication{
-    display: flex;
-    justify-content: space-between;
-}
-.terms{
-    display: flex;
-}
-.terms h4{
-    margin-left: 10px;
-    color: #8a94a9;
-} */
-/*FINALIZA FOOTER*/
+/*FINALIZA RESPONSIVE*/
