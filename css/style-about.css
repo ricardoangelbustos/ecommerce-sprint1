@@ -53,7 +53,6 @@ body{
 }
 .about-brands{
     /*background-color: navy; */
-
     width: 100%;
     height: auto;
     display: flex;
@@ -70,7 +69,6 @@ footer{
 	bottom: 0;
 }
 .footer-distributed{
-
 	background-color: #394a6d;
 	box-sizing: border-box;
 	width: 100%;
@@ -194,6 +192,7 @@ footer{
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+/*FINALIZA FOOTER*/
 /*INICIA RESPONSIVE*/
 @media (max-width: 1300px) {
 	.main-about{
