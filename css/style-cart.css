@@ -170,6 +170,7 @@
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
+    margin-bottom: -150px;
 }
 .similar-product{
     background-color: white;
@@ -191,79 +192,66 @@
 /*FIN SECTION SIMILAR*/
 /*INICIA FOOTER*/
 footer{
-	position: fixed;
+	position: static;
 	bottom: 0;
 }
-
 .footer-distributed{
-
 	background-color: #394a6d;
 	box-sizing: border-box;
 	width: 100%;
-  height: 200px;
+  	height: 200px;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 10px 50px 200px 60px;
 	margin-top: 200px; /* La distancia del footer con el contenido */
 }
-
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
-
+.phone{
+	color: white;
+	text-decoration: none;
+}
 /* Footer left */
-
 .footer-distributed .footer-left{
 	width: 30%;
 }
-
 .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
 }
-
 /* The company logo */
-
 .footer-distributed .footer-left img{
 	width: 30%;
 }
-
 .footer-distributed h3 span{
 	color:  #e0ac1c;
 }
-
 /* Footer links */
-
 .footer-distributed .footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
 }
-
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
 }
-
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
-
 /* Footer Center */
-
 .footer-distributed .footer-center{
 	width: 35%;
 }
-
-
 .footer-distributed .footer-center i{
 	background-color:  #33383b;
 	color: #ffffff;
@@ -276,38 +264,30 @@ footer{
 	margin: 10px 15px;
 	vertical-align: middle;
 }
-
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
-
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
 	margin:0;
 }
-
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
-
 .footer-distributed .footer-center p a{
 	color:  #e0ac1c;
 	text-decoration: none;;
 }
-
-
 /* Footer Right */
-
 .footer-distributed .footer-right{
 	width: 30%;
 }
-
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
@@ -315,7 +295,6 @@ footer{
 	font-weight: normal;
 	margin: 0;
 }
-
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
@@ -323,11 +302,9 @@ footer{
 	font-weight: bold;
 	margin-bottom: 20px;
 }
-
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
-
 .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
@@ -335,20 +312,18 @@ footer{
 	cursor: pointer;
 	background-color:  #33383b;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-
 /*FINALIZA FOOTER*/
 .grey{
     color: #8f8f8f;
 }
+/*INICIA RESPONSIVE*/
 @media (max-width: 1300px) {
     .container{
         width: 100%;
@@ -409,19 +384,21 @@ footer{
         text-align: center;
         margin-left: -1300px;
         /* background-color: royalblue; */
-
     }
     .total{
         line-height: 50px;
         display: flex;
         justify-content: flex-end;
     }
-    
+    .similar-title{
+        margin-top: -10px;
+    }
     .similar{
         width: auto;
-        height: 850px;
+        height: 1050px;
         display: flex;
         flex-direction: column;
+        margin-top: -10px;
     }
     .footer-distributed .footer-left,
 	.footer-distributed .footer-center,
@@ -441,3 +418,4 @@ footer{
 		margin-left: 0;
 	}
 }
+/*FINALIZA RESPONSIVE*/
