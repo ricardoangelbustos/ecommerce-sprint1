@@ -1,4 +1,3 @@
-/*INICIA USER PROFILE*/
 .container{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
@@ -57,8 +56,9 @@
 .container-three-parts{
     width: 1200px;
     height: 700px;
-    /*background-color: darkolivegreen;*/
+    /* background-color: darkolivegreen; */
     display: flex;
+    margin-bottom: -160px;
 }
 .option-left{
     width: 300px;
@@ -108,7 +108,6 @@
     /*background-color: darkorange;*/
     align-items: center;
     margin-bottom: 50px;
-    
 }
 .sale img{
     width: 30px;
@@ -163,61 +162,137 @@
 .separator{
     width: 5px;
     height: 600px;
-    
     margin-top: 50px;
     border-left: 4px solid #808080;
 }
 /*FIN PARTE PRINCIPAL*/
 /*INICIA FOOTER*/
-.footer{
-    background-color: #394a6d;
-    margin-top: 40px;
-    width: 100%;
-    height: 150px;
-    color: white;
-    line-height: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    box-sizing: border-box;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    
+footer{
+	position: static;
+    bottom: 0;
 }
-.footer a{
-    text-decoration: none;
-    color: white;
+.footer-distributed{
+	background-color: #394a6d;
+	box-sizing: border-box;
+	width: 100%;
+  	height: 200px;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 10px 50px 200px 60px;
+	margin-top: 200px; /* La distancia del footer con el contenido */
 }
-.footer a:hover{
-    transition: 500ms;
-    color: black;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
-.row1{
-    display: flex;
-    justify-content: space-between;
+.phone{
+	color: white;
+	text-decoration: none;
 }
-.brands img{
-    width: 30px;
-    margin-left: 30px;
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 30%;
 }
-.row2{
-    display: flex;
-    justify-content: space-between;
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
 }
-.footer-separator{
-    height: 1px;
-    width: 100%;
-    background-color:  white;
+/* The company logo */
+.footer-distributed .footer-left img{
+	width: 30%;
 }
-.ubication{
-    display: flex;
-    justify-content: space-between;
+.footer-distributed h3 span{
+	color:  #e0ac1c;
 }
-.terms{
-    display: flex;
+/* Footer links */
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
 }
-.terms h4{
-    margin-left: 10px;
-    color: #8a94a9;
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+	width: 30%;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
 /*FINALIZA FOOTER*/
