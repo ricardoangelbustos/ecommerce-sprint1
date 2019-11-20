@@ -65,7 +65,7 @@ body{
 /*FINALIZA SECTION*/
 /*INICIA FOOTER*/
 footer{
-	position: static;
+	position: fixed;
 	bottom: 0;
 }
 .footer-distributed{
@@ -210,7 +210,7 @@ footer{
   	.footer-distributed{
     height:auto;
   	}
-  	footer { 
+  	footer {
 	  position: static;
 	}
 
