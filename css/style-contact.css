@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #e4f4f7;
+}
+/*INICIA HEADER*/
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #4469fd;
+    box-sizing: border-box;
+    color: white;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+}
+/*FINALIZA HEADER*/
+/*INICIA SECTION*/
+.main-contact{
+    background-color: #cae9ec;
+    margin: 50px auto;
+    width: 1200px;
+    height: 500px;
+	border-radius: 10px;
+	border: 1px solid black;
+	display: flex;
+	margin-bottom: -140px;
+}
+.left-contact{
+	/* background-color: blue; */
+	width: 300px;
+	height: 500px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 20px;
+	border-right: 1px solid black;
+}
+.left-contact h2{
+	margin-bottom: 20px;
+}
+.left-contact h3{
+	margin-top: 30px;
+}
+.left-contact p{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.author{
+	/* background-color: red; */
+	margin-top: 30px;
+}
+.author p{
+	font-size: 11px;
+}
+.author span{
+	font-weight: 900;
+}
+.right-contact{
+	/* background-color: pink; */
+	width: 900px;
+	height: 500px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 10px;
+}
+h1{
+	margin-bottom: 20px;
+	margin-top: 12px;
+}
+.inputs{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.inputs input{
+	width: 400px;
+	margin-bottom: 10px;
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid black;
+	text-align: center;
+}
+textarea{
+	width: 850px;
+	height: 230px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+button{
+	width: 850px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #62d1ec;
+	color: white;
+	font-weight: 800;
+	margin-top: 10px;
+	border: 1px solid #62d1ec;
+}
+/*FINALIZA SECTION*/
+/*INICIA FOOTER*/
+footer{
+	position: static;
+	bottom: 0;
+}
+.footer-distributed{
+	background-color: #394a6d;
+	box-sizing: border-box;
+	width: 100%;
+  	height: 200px;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 10px 50px 200px 60px;
+	margin-top: 200px; /* La distancia del footer con el contenido */
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.phone{
+	color: white;
+	text-decoration: none;
+}
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 30%;
+}
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+/* The company logo */
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+/* Footer links */
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+	width: 30%;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+/*FINALIZA FOOTER*/

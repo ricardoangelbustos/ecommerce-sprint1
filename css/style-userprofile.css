@@ -1,0 +1,223 @@
+/*INICIA USER PROFILE*/
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 1300px;
+    height: 1000px;
+    background-color: #e4f4f7;
+}
+/*INICIA HEADER*/
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #4469fd;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+.logo img{
+    width: 100px;
+    margin-left: 5px;
+}
+.dropdown-categories{
+    margin-left: 20px;
+    color: black;
+}
+.search{
+    margin-left: 40px;
+}
+.search input{
+    width: 700px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #4469fd;
+}
+.cart{
+    margin-left: 70px;
+    width: 30px;
+}
+.user-name{
+    margin-left: 40px;
+}
+.user-name a{
+    text-decoration: none;
+    color: black;
+}
+.user-name a:hover{
+    transition: 500ms;
+    color: white;
+}
+.account{
+    margin-left: 20px;
+}
+/*FINALIZA HEADER*/
+/*INICIA PARTE PRINCIPAL*/
+.container-three-parts{
+    width: 1200px;
+    height: 700px;
+    /*background-color: darkolivegreen;*/
+    display: flex;
+}
+.option-left{
+    width: 300px;
+    height: 740px;
+    background-color: #d1d1d1;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.general-center{
+    width: 600px;
+    height: 700px;
+    /*background-color: darkorchid;*/
+    padding-top: 50px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.option-right{
+    width: 300px;
+    height: 700px;
+    /*background-color: darkorange;*/
+}
+.my-account{
+    display: flex;
+    width: 290px;
+    /*background-color: darkorange;*/
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.my-account img{
+    width: 30px;
+}
+.purchase{
+    display: flex;
+    width: 290px;
+    /*background-color: darkorange;*/
+    align-items: center;
+    margin-bottom: 50px;
+}
+.purchase img{
+    width: 30px;
+}
+.sale{
+    display: flex;
+    width: 290px;
+    /*background-color: darkorange;*/
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+.sale img{
+    width: 30px;
+}
+.reputation{
+    display: flex;
+    width: 290px;
+    /*background-color: darkorange;*/
+    align-items: center;
+    margin-bottom: 20px;
+}
+.reputation img{
+    width: 30px;
+}
+.configuration{
+    display: flex;
+    width: 290px;
+    /*background-color: darkorange;*/
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 220px;
+}
+.configuration img{
+    width: 30px;
+}
+.configuration h3{
+    margin-left: 20px;
+    font-size: 17px;
+}
+.configuration a{
+    text-decoration: none;
+    color: black;
+}
+.configuration a:hover{
+    transition: 500ms;
+    color: #4469fd;
+}
+.option-left button{
+    margin-left: 50px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #4469fd;
+    font-size: 15px;
+    font-weight: 600;
+}
+.option-left button:hover{
+    transition: 500ms;
+    background-color: #4469fd;
+    color: white;
+}
+.separator{
+    width: 5px;
+    height: 600px;
+    
+    margin-top: 50px;
+    border-left: 4px solid #808080;
+}
+/*FIN PARTE PRINCIPAL*/
+/*INICIA FOOTER*/
+.footer{
+    background-color: #394a6d;
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    color: white;
+    line-height: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    transition: 500ms;
+    color: black;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+.brands img{
+    width: 30px;
+    margin-left: 30px;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-separator{
+    height: 1px;
+    width: 100%;
+    background-color:  white;
+}
+.ubication{
+    display: flex;
+    justify-content: space-between;
+}
+.terms{
+    display: flex;
+}
+.terms h4{
+    margin-left: 10px;
+    color: #8a94a9;
+}
+/*FINALIZA FOOTER*/
