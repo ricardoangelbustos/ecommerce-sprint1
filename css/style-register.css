@@ -1,9 +1,17 @@
 /*INICIA REGISTER*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #e4f4f7;
+}
+
 .container{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    width: 1300px;
-    height: 750px;
+    width: 100%;
+    /* height: 750px; */
     background-color: #4569fd;
 }
 /*INICIA HEADER*/
@@ -29,8 +37,8 @@
 /*INICIA FORM*/
 .register{
     background-color: #62d1ec;
-    width: 600px;
-    height: 380px;
+    width: 60%;
+    height: auto;
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: -100px;
@@ -38,8 +46,8 @@
 }
 .names{
     /*background-color: darkcyan;*/
-    width: 600px;
-    height: 50px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,15 +56,15 @@
     box-sizing: border-box;
 }
 .names input{
-    width: 250px;
-    height: 30px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     border: 1px solid #4469fd;
 }
 .age-gender{
     /*background-color: darkgoldenrod;*/
-    width: 600px;
-    height: 50px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,15 +73,15 @@
     box-sizing: border-box;
 }
 .age-gender select{
-    width: 250px;
-    height: 40px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     border: 1px solid #b97778;
 }
 .email{
     /*background-color: darkgray;*/
-    width: 600px;
-    height: 50px;
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -81,38 +89,39 @@
     box-sizing: border-box;
 }
 .email input{
-    width: 550px;
-    height: 30px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     border: 1px solid #b97778;
 }
 .pass{
     /*background-color: darkkhaki;*/
-    width: 600px;
-    height: 50px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
+     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
 }
 .pass input{
-    width: 250px;
-    height: 30px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     border: 1px solid #b97778;
 }
 .checkboxes-button{
     /*background-color: darkolivegreen;*/
-    padding-left: 20px;
-    color: white;
+    /* padding-left: 20px;
+    color: white; */
 }
 .checkboxes-button img{
-    width: 50px;
-    position: relative;
-    bottom: 60px;
-    left: 490px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 50px;
+  margin-left: 90%;
 }
 /*FINALIZA FORM*/
 /*INICIA FOOTER*/
@@ -243,5 +252,31 @@ footer{
 	line-height: 35px;
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+@media (max-width: 425px){
+  .register{
+    width: 90%;
+  }
+
+}
+@media (max-width: 1038px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+
+	}
+  .footer-distributed{
+    height:auto;
+  }
+  footer { position: static; }
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
 }
 /*FINALIZA FOOTER*/
