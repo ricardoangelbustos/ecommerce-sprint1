@@ -1,7 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: auto;
+}
 .container{
-    margin: 0 auto;
-    width: 1300px;
-    height: 1000px;
+    /* margin: 0 auto; */
+    width: 100%;
+    height: auto;
     background-color: #e4f4f7;
 }
 /*INICIA HEADER*/
@@ -55,23 +63,23 @@
 /*FINALIZA HEADER*/
 /*INICIA PARTE PRINCIPAL*/
 .container-three-parts{
-    width: 1200px;
-    height: 700px;
-    /* background-color: darkolivegreen; */
+    width: auto;
+    height: auto;
+     /* background-color: darkolivegreen; */
     display: flex;
     margin-bottom: -160px;
 }
 .option-left{
-    width: 300px;
-    height: 740px;
+    width: 20%;
+    height: auto;
     background-color: #d1d1d1;
     padding-left: 30px;
     padding-top: 30px;
     box-sizing: border-box;
 }
 .general-center{
-    width: 600px;
-    height: 700px;
+    width: 40%;
+    height: auto;
     /* background-color: darkorchid; */
     padding-top: 50px;
     padding-left: 30px;
@@ -126,7 +134,7 @@
 }
 .option-right{
     width: 300px;
-    height: 700px;
+    height: auto;
     /*background-color: darkorange;*/
 }
 .option-right h2{
@@ -166,7 +174,8 @@
 }
 .my-account{
     display: flex;
-    width: 290px;
+    width: 100%;
+    height: auto;
     /*background-color: darkorange;*/
     align-items: center;
     margin-bottom: 50px;
@@ -177,7 +186,8 @@
 }
 .purchase{
     display: flex;
-    width: 290px;
+    width: 100%;
+    height: auto;
     /*background-color: darkorange;*/
     align-items: center;
     margin-bottom: 50px;
@@ -187,7 +197,8 @@
 }
 .sale{
     display: flex;
-    width: 290px;
+    width: 100%;
+    height: auto;
     /*background-color: darkorange;*/
     align-items: center;
     margin-bottom: 50px;
@@ -197,7 +208,8 @@
 }
 .reputation{
     display: flex;
-    width: 290px;
+    width: 100%;
+    height: auto;
     /*background-color: darkorange;*/
     align-items: center;
     margin-bottom: 20px;
@@ -207,7 +219,8 @@
 }
 .configuration{
     display: flex;
-    width: 290px;
+    width: 100%;
+    height: auto;
     /*background-color: darkorange;*/
     align-items: center;
     margin-bottom: 20px;
@@ -401,3 +414,23 @@ footer{
 	margin-bottom: 5px;
 }
 /*FINALIZA FOOTER*/
+@media (max-width: 1038px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+
+	}
+  .footer-distributed{
+    height:auto;
+  }
+  footer { position: static; }
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
