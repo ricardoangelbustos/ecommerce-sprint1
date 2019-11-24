@@ -1,5 +1,4 @@
 .container{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 1300px;
     height: 1000px;
@@ -23,6 +22,7 @@
 .dropdown-categories{
     margin-left: 20px;
     color: black;
+    font-family: 'Roboto',sans-serif;
 }
 .search{
     margin-left: 40px;
@@ -39,6 +39,7 @@
 }
 .user-name{
     margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 .user-name a{
     text-decoration: none;
@@ -75,6 +76,9 @@
     padding-top: 50px;
     padding-left: 30px;
     box-sizing: border-box;
+}
+.general-center h2{
+    font-family: 'Roboto', sans-serif;
 }
 .option-right{
     width: 300px;
@@ -151,6 +155,7 @@
     height: 40px;
     border-radius: 10px;
     border: 1px solid #4469fd;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 600;
 }
@@ -169,7 +174,7 @@
 /*INICIA FOOTER*/
 footer{
 	position: static;
-    bottom: 0;
+	bottom: 0;
 }
 .footer-distributed{
 	background-color: #394a6d;
@@ -177,7 +182,9 @@ footer{
 	width: 100%;
   	height: 200px;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: 200;
 	padding: 10px 50px 200px 60px;
 	margin-top: 200px; /* La distancia del footer con el contenido */
 }
@@ -191,13 +198,27 @@ footer{
 	color: white;
 	text-decoration: none;
 }
+.phone:hover{
+	transition: 500ms;
+	color: #62d1ec;
+}
+.maillogin{
+    color: orange;
+    text-decoration: none;
+}
+.maillogin:hover{
+    transition: 500ms;
+	color: #62d1ec;
+}
 /* Footer left */
 .footer-distributed .footer-left{
 	width: 30%;
 }
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
 	margin: 0;
 }
 /* The company logo */
@@ -217,6 +238,10 @@ footer{
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+.footer-distributed .footer-links a:hover{
+	transition: 500ms;
+	color: #62d1ec
 }
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
@@ -274,8 +299,9 @@ footer{
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 .footer-distributed .footer-icons{
