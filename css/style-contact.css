@@ -18,10 +18,9 @@
     padding: 0;
 }
 .container{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 100%;
-    height: 999px;
+    height: 820px;
     background-color: #e4f4f7;
 }
 /*INICIA HEADER*/
@@ -63,8 +62,20 @@
 }
 
 .left-contact p{
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 14px;
 	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.left-contact h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+}
+.left-contact h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
 }
 .author{
 	/* background-color: red; */
@@ -83,6 +94,11 @@
 	text-align: center;
 	box-sizing: border-box;
 	padding-top: 10px;
+}
+.right-contact h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	font-weight: 600;
 }
 h1{
 	margin: 0 auto;
@@ -115,8 +131,8 @@ textarea{
 	width: 80%;
 	height: 230px;
 	border-radius: 10px;
-	font-size: 15px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 button{
 	width: 60%;
@@ -138,9 +154,11 @@ footer{
 	background-color: #394a6d;
 	box-sizing: border-box;
 	width: 100%;
-  	/* height: 200px; */
+  	height: 200px;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: 200;
 	padding: 10px 50px 200px 60px;
 	margin-top: 200px; /* La distancia del footer con el contenido */
 }
@@ -154,13 +172,28 @@ footer{
 	color: white;
 	text-decoration: none;
 }
+.phone:hover{
+	transition: 500ms;
+	color: #62d1ec;
+}
+.email{
+	color: orange;
+	text-decoration: none;
+}
+.email a:hover{
+	transition: 500ms;
+	color: #62d1ec;
+}
+
 /* Footer left */
 .footer-distributed .footer-left{
 	width: 30%;
 }
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
 	margin: 0;
 }
 /* The company logo */
@@ -180,6 +213,10 @@ footer{
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+.footer-distributed .footer-links a:hover{
+	transition: 500ms;
+	color: #62d1ec
 }
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
@@ -213,7 +250,6 @@ footer{
 	vertical-align: middle;
 	margin:0;
 }
-
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
@@ -238,8 +274,9 @@ footer{
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 .footer-distributed .footer-icons{
@@ -259,6 +296,7 @@ footer{
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+/*FINALIZA FOOTER*/
 /*INICIA RESPONSIVE*/
 @media (max-width: 1300px) {
 	.main-about{
