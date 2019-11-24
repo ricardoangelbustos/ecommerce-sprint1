@@ -4,6 +4,11 @@
     height: auto;
     background-color: #e4f4f7;
 }
+.another-container{
+  overflow:hidden;
+  width: 100%;
+  height: auto;
+}
 /*INICIA HEADER*/
 .header{
     display: flex;
@@ -54,6 +59,7 @@
 }
 /*FINALIZA HEADER*/
 /*INICIA SECCION DETAIL PRINCIPAL*/
+
 h1{
     font-family: 'Roboto', sans-serif;
     font-size: 34px;
@@ -152,7 +158,7 @@ h1{
     /* background-color: darkorange; */
     width: 700px;
     height: 100px;
-    display: flex;
+    display: table;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -207,11 +213,13 @@ h1{
 }
 .description{
     /* background-color: yellowgreen; */
-    width: 690px;
-    height: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 60%;
+    height: auto;
     box-sizing: border-box;
     padding-top: 15px;
-    padding-left: 40px;
+    padding-left: 11px;
     padding-right: 40px;
     line-height: 20px;
 }
@@ -435,8 +443,8 @@ footer{
     .search{
         margin-left: 40px;
     }
-    .search input{ 
-        width: 400px;
+    .search input{
+        width: 90%;
     }
     .cart{
         display: none;
@@ -450,7 +458,8 @@ footer{
     }
     /**/
     .main-detail{
-        width: auto;
+        width: 100%;
+        height: auto;
     }
     .product-add{
         width: auto;
@@ -487,12 +496,13 @@ footer{
         /* background-color: red; */
     }
     .product-mini{
-        width: auto;
+        width: 100%;
+        height: auto;
     }
     .product-mini img{
         width: auto;
         border: none;
-        width: 80px;
+        /* width: 80px; */
     }
     .sub-detail{
         width: auto;
@@ -529,13 +539,23 @@ footer{
     .footer-distributed{
         height: auto;
     }
-    footer { 
-        position: static; 
+    footer {
+        position: static;
     }
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
 }
+
+.product-img img{
+    width: 300px;
+}
+.product-mini img{
+    width: auto;
+    border: none;
+    width: 50px;
+}
+
 @media (max-width: 1200px){
     .product-img{
         margin: 0 150px;
@@ -583,15 +603,20 @@ footer{
 }
 @media (max-width: 500px){
     .product-img{
-        margin: 0 -170px;
-        width: 400px;
-        position: relative;
-        left: 100px;
-        /* background-color: red; */
-        border-bottom: none;
+      /* margin: 7px -170px; */
+    margin-top: 2px;
+    margin-left: -188px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 100px;
+     /* background-color: red; */
+    /* border-bottom: none; */
     }
     .product-img img{
-        width: 200px;   
+        width: 200px;
     }
     .product-img{
         overflow: hidden;
