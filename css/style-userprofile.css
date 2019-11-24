@@ -478,6 +478,54 @@ footer{
     }
 }
 @media (max-width: 640px){
+    .option-left .boton-1{
+      background: url('../img/account.svg') center;
+      background-size: 100% 100%;
+      border: none;
+      cursor: pointer;
+      padding: 5px 15px;
+      color: white;
+    }
+    .option-left .boton-2{
+      background: url('../img/shopping-bag-solid.svg') center;
+      background-size: 100% 100%;
+      border: none;
+      cursor: pointer;
+      padding: 5px 15px;
+      color: white;
+
+    }
+    .option-left .boton-3{
+      background: url('../img/sales2.png') center no-repeat;
+      background-size: 80% 80%;
+      border: none;
+      cursor: pointer;
+      padding: 5px 15px;
+      color: white;
+
+    }
+    .option-left .boton-4{
+      background: url('../img/medal-solid.svg') center;
+      background-size: 100% 100%;
+      border: none;
+      cursor: pointer;
+      padding: 5px 15px;
+      color: white;
+
+    }
+    .option-left .boton-5{
+      background: url('../img/cog-solid.svg') center;
+      background-size: 100% 100%;
+      border: none;
+      cursor: pointer;
+      padding: 5px 15px;
+      color: white;
+
+    }
+    .option-left button p{
+
+        display: none;
+    }
     .option-left{
         width: 51%;
     }
@@ -488,10 +536,10 @@ footer{
         width: 100%;
         height:100px;
         margin-left: -20px;
-        font-size: 10px;
+        font-size: 15px;
     }
     .configuration button{
-        font-size: 10px;
+        font-size: 15px;
         width: 100%;
     }
     .header{
