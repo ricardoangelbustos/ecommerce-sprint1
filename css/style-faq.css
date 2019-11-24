@@ -107,7 +107,7 @@ section h2{
 /*FINALIZA SECTION*/
 /*INICIA FOOTER*/
 footer{
-	position: static;
+	position: fixed;
 	bottom: 0;
 }
 .footer-distributed{
