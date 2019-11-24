@@ -1,5 +1,4 @@
 .container{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -23,6 +22,7 @@
 .dropdown-categories{
     margin-left: 20px;
     color: black;
+    font-family: 'Roboto',sans-serif;
 }
 .search{
     margin-left: 40px;
@@ -39,6 +39,7 @@
 }
 .user-name{
     margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 .user-name a{
     text-decoration: none;
@@ -54,7 +55,8 @@
 /*FINALIZA HEADER*/
 /*INICIA SECCION DETAIL PRINCIPAL*/
 h1{
-    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
 }
 .main-detail{
     background-color: white;
@@ -84,6 +86,7 @@ h1{
     width: 200px;
     height: 40px;
     border-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .credit-card{
     display: flex;
@@ -95,6 +98,7 @@ h1{
 }
 .credit-card h5{
     color: #828282;
+    font-family: 'Roboto', sans-serif;
 }
 .ship{
     display: flex;
@@ -107,6 +111,7 @@ h1{
 }
 .ship h5{
     color: #828282;
+    font-family: 'Roboto', sans-serif;
 }
 .product-add button{
     width: 200px;
@@ -116,16 +121,20 @@ h1{
     border-radius: 10px;
     border: 1px solid #d3f2f5;
     font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 .stock{
     margin-top: 70px;
     line-height: 0px;
 }
 .stock h2{
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
 .stock h6{
     color: #828282;
+    font-family: 'Roboto', sans-serif;
 }
 .product-img{
     /* background-color: darkkhaki; */
@@ -180,6 +189,8 @@ h1{
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 .product-details{
     box-sizing: border-box;
@@ -187,8 +198,12 @@ h1{
     padding-top: 20px;
     line-height: 20px;
 }
+.product-details h3{
+    font-family: 'Roboto', sans-serif;
+}
 .product-details span{
     color: #828282;
+    font-family: 'Roboto', sans-serif;
 }
 .description{
     /* background-color: yellowgreen; */
@@ -200,10 +215,19 @@ h1{
     padding-right: 40px;
     line-height: 20px;
 }
+.description h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+.description p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+}
 /*FINALIZA SECCION SUBDETAIL*/
 .similar-title{
     text-align: center;
     color: #747c7e;
+    font-family: 'Roboto', sans-serif;
 }
 /*INICIA SECTION SIMILAR*/
 .similar{
@@ -227,6 +251,9 @@ h1{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    font-weight: 200;
 }
 .similar-product img{
     width: 200px;
@@ -245,7 +272,9 @@ footer{
 	width: 100%;
   	height: 200px;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: 200;
 	padding: 10px 50px 200px 60px;
 	margin-top: 200px; /* La distancia del footer con el contenido */
 }
@@ -259,13 +288,28 @@ footer{
 	color: white;
 	text-decoration: none;
 }
+.phone:hover{
+	transition: 500ms;
+	color: #62d1ec;
+}
+.email{
+	color: orange;
+	text-decoration: none;
+}
+.email a:hover{
+	transition: 500ms;
+	color: #62d1ec;
+}
+
 /* Footer left */
 .footer-distributed .footer-left{
 	width: 30%;
 }
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
 	margin: 0;
 }
 /* The company logo */
@@ -285,6 +329,10 @@ footer{
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+.footer-distributed .footer-links a:hover{
+	transition: 500ms;
+	color: #62d1ec
 }
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
@@ -342,8 +390,9 @@ footer{
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 .footer-distributed .footer-icons{
