@@ -1,5 +1,4 @@
 .container{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 100%;
     height: 780px;
@@ -26,13 +25,21 @@
     border-radius: 10px;
     border: 1px solid #4469fd;
 }
+.header h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 300px;
+}
 .logo img{
     width: 100px;
 }
 /*FINALIZA HEADER*/
 /*INICIA SECTION*/
 section h2{
-    text-align: center;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	font-weight: 300px;
 }
 .faq-main{
     background-color: #cae9ec;
@@ -72,22 +79,30 @@ section h2{
     align-items: center;
     border-bottom: 1px solid black;
 }
+.select h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 300px;
+}
 .right-main{
     /* background-color: darkkhaki; */
     width: 900px;
     height: 350px;
     box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 10px;
     padding-left: 50px;
     padding-right: 30px;
 }
 .right-main h3{
-    font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
+	font-weight: 300px;
 }
 .right-main p{
-    font-size: 12px;
-    margin-top: -10px;
+	margin-top: -10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 13px;
+	font-weight: 300px;
 }
 /*FINALIZA SECTION*/
 /*INICIA FOOTER*/
@@ -101,7 +116,9 @@ footer{
 	width: 100%;
   	height: 200px;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: 200;
 	padding: 10px 50px 200px 60px;
 	margin-top: 200px; /* La distancia del footer con el contenido */
 }
@@ -115,13 +132,28 @@ footer{
 	color: white;
 	text-decoration: none;
 }
+.phone:hover{
+	transition: 500ms;
+	color: #62d1ec;
+}
+.email{
+	color: orange;
+	text-decoration: none;
+}
+.email a:hover{
+	transition: 500ms;
+	color: #62d1ec;
+}
+
 /* Footer left */
 .footer-distributed .footer-left{
 	width: 30%;
 }
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
 	margin: 0;
 }
 /* The company logo */
@@ -141,6 +173,10 @@ footer{
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+.footer-distributed .footer-links a:hover{
+	transition: 500ms;
+	color: #62d1ec
 }
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
@@ -198,8 +234,9 @@ footer{
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 .footer-distributed .footer-icons{
