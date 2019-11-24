@@ -7,7 +7,6 @@ body{
   height:auto;
 }
 .container{
-    font-family: Arial, Helvetica, sans-serif;
     /* margin: 0 auto; */
     width: 100%;
     height: auto;
@@ -24,6 +23,7 @@ body{
     padding-left: 20px;
     box-sizing: border-box;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 .logo img{
     width: 100px;
@@ -82,10 +82,14 @@ body{
 .active{
     margin-left: 20px;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 .saved{
     margin-left: 30px;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 .separator{
     background-color: black;
@@ -107,13 +111,15 @@ body{
 .item-quantity{
     display: flex;
     margin-bottom: 60px;
-    width: 20%;
+    width: 30%;
     height: auto;
     font-size: 15px;
 }
 .item-quantity h3{
-    margin: : 0 auto;
+    margin: 0 auto;
     justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 .item-property{
     display: flex;
@@ -127,6 +133,7 @@ body{
 }
 .item-property h3{
     margin-left: 49px;
+    font-family: 'Roboto', sans-serif;
 }
 .delete{
     margin-right: 130px;
@@ -149,8 +156,9 @@ body{
     position: relative;
     bottom: -10px;
     left: 650px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .total{
@@ -163,16 +171,17 @@ body{
 .total h3{
     margin-left: 50px;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 /*FINALIZA SECTION CARRITO PRINCIPAL*/
 .similar-title{
     text-align: center;
     color: #747c7e;
+    font-family: 'Roboto', sans-serif;
 }
 /*INICIA SECTION SIMILAR*/
 .similar{
     /* background-color: darkgoldenrod; */
-
     margin: 0 auto;
     width: 90%;
     height: 300px;
@@ -193,8 +202,11 @@ body{
     align-items: center;
     border: 1px solid black;
 }
+.similar-product h3{
+    font-family: 'Roboto', sans-serif;
+}
 .similar-product img{
-    width: 50%;
+    width: 90%;
     height: auto;
     /* height: 190px; */
     margin-top: 10px;
@@ -211,7 +223,9 @@ footer{
 	width: 100%;
   	height: 200px;
 	text-align: left;
-	font: bold 16px sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
 	padding: 10px 50px 200px 60px;
 	margin-top: 200px; /* La distancia del footer con el contenido */
 }
@@ -224,6 +238,18 @@ footer{
 .phone{
 	color: white;
 	text-decoration: none;
+}
+.phone:hover{
+	transition: 500ms;
+	color: #62d1ec;
+}
+.email{
+	color: orange;
+	text-decoration: none;
+}
+.email a:hover{
+	transition: 500ms;
+	color: #62d1ec;
 }
 /* Footer left */
 .footer-distributed .footer-left{
@@ -251,6 +277,10 @@ footer{
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+.footer-distributed .footer-links a:hover{
+	transition: 500ms;
+	color: #62d1ec
 }
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
@@ -308,8 +338,9 @@ footer{
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 .footer-distributed .footer-icons{
