@@ -1,8 +1,14 @@
+
 .container{
-    margin: 0 auto;
     width: 100%;
-    height: 780px;
     background-color: #e4f4f7;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #e4f4f7;
 }
 /*INICIA HEADER*/
 .header{
@@ -20,8 +26,8 @@
     flex-direction: column;
 }
 .header input{
-    width: 800px;
-    height: 60px;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     border: 1px solid #4469fd;
 }
@@ -42,10 +48,11 @@ section h2{
 	font-weight: 300px;
 }
 .faq-main{
+
     background-color: #cae9ec;
     margin: 0 auto;
-    width: 1200px;
-    height: 350px;
+    width: 70%;
+    height: auto;
     border-radius: 10px;
     box-sizing: border-box;
     display: flex;
@@ -54,8 +61,8 @@ section h2{
 }
 .left-main{
     /* background-color: darkgoldenrod; */
-    width: 300px;
-    height: 350px;
+    width: 20%;
+    height: auto;
     box-sizing: border-box;
     border-right: 1px solid black;
 }
@@ -86,12 +93,13 @@ section h2{
 }
 .right-main{
     /* background-color: darkkhaki; */
-    width: 900px;
-    height: 350px;
-    box-sizing: border-box;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
     box-sizing: border-box;
     padding-left: 50px;
     padding-right: 30px;
+
 }
 .right-main h3{
 	font-family: 'Roboto', sans-serif;
@@ -255,5 +263,40 @@ footer{
 	line-height: 35px;
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+@media (max-width: 425px) {
+  .select h3 {
+    display: none;
+  }
+  .left-main{
+    display: none;
+  }
+
+}
+@media (max-width: 960px) {
+  .select h3 {
+    font-size: 15px;
+  }
+
+}
+@media (max-width: 1038px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+
+	}
+  .footer-distributed{
+    height:auto;
+  }
+  footer { position: static; }
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
 }
 /*FINALIZA FOOTER*/
