@@ -96,6 +96,7 @@ body{
     height: 110px;
     margin-top: 50px;
     color: #888e8f;
+    line-height: 30px;
 }
 .questions h3{
     font-family: 'Roboto', sans-serif;
@@ -122,7 +123,7 @@ body{
     color: #888e8f;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 30px;
 }
 .shop img{
     width: 25px;
@@ -167,6 +168,7 @@ body{
     font-family: 'Roboto', sans-serif;
     margin-left: 15px;
     text-align: center;
+    margin-top: 60px;
 }
 .favorite-text span{
     font-size: 10px;
@@ -433,4 +435,67 @@ footer{
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+
+    .option-left{
+        width: 30%;
+    }
+    .option-left button{
+        width: 50%;
+        font-size: 10px;
+    }
+    .configuration button{
+        font-size: 10px;
+    }
+    .separator{
+        display: none;
+    }
+    .option-right{
+        display: none;
+    }
+    .general-center{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: 130px;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .dropdown-categories{
+        margin-left: 35px;
+    }
+    .search input{
+        width: 100%;
+    }
+    .account{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+}
+@media (max-width: 640px){
+    .option-left{
+        width: 20%;
+    }
+    .option-left img{
+        display: none;
+    }
+    .option-left button{
+        width: 110%;
+        margin-left: -20px;
+        font-size: 8px;
+    }
+    .configuration button{
+        font-size: 6px;
+    }
+    .header{
+        width: 100%;
+    }
+    .search input{
+        width: 100%;
+    }
 }
