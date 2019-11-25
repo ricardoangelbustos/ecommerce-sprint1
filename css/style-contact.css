@@ -3,7 +3,15 @@
     font-size: 20px;
   }
 }
-@media (max-width: 585px){
+@media (max-width: 676px){
+  .right-contact{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .left-contact{
+    display: none;
+  }
   h1,h2,h3{
     font-size: 15px;
   }

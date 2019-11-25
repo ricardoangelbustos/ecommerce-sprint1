@@ -264,7 +264,7 @@ footer{
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-@media (max-width: 425px) {
+@media (max-width: 722px) {
   .select h3 {
     display: none;
   }
