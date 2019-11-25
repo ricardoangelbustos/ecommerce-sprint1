@@ -470,7 +470,14 @@
     color: black;
     font-size: 30px;
 }
-
+.login a:hover{
+    transition: 500ms;
+    color: white;
+}
+.singup a:hover{
+    transition: 500ms;
+    color: white;
+}
 
 .img1{
     width: 100%;
@@ -604,6 +611,18 @@ footer{
 	color: white;
 	text-decoration: none;
 }
+.phone:hover{
+    transition: 500ms;
+    color: #62d1ec;
+}
+.email{
+    text-decoration: none;
+    color: orange;
+}
+.email:hover{
+    transition: 500ms;
+    color: #62d1ec;
+}
 /* Footer left */
 .footer-distributed .footer-left{
 	width: 30%;
@@ -630,6 +649,10 @@ footer{
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+.footer-links a:hover{
+    transition: 500ms;
+    color: #62d1ec;
 }
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
