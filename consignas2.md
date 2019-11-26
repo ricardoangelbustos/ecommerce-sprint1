@@ -1,4 +1,4 @@
-# ecommerce-sprint1
+# E-commerce
 Sprint 2 del proyecto integrador de Digital House. Entrega 12/12.
 
 <h2>Objetivo</h2>
