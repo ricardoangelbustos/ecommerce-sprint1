@@ -1,4 +1,4 @@
-# E-commerce Sprint1
+# E-commerce
 Sprint 1 del proyecto integrador de Digital House. Entrega 21/11.
 
 Tenes que crear un sitio web, el cual sea responsive y navegable a través de enlaces del mismo sitio con las siguientes páginas:
