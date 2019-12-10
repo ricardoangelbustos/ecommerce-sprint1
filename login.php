@@ -5,8 +5,11 @@ $email="";
 $password="";
 $usuariosGuardados=[];
 $usuarioFinal=[];
-var_dump($_SESSION);
-var_dump($_COOKIE);
+/* var_dump($_SESSION);
+var_dump($_COOKIE); */
+if (isset($_COOKIE["email"])) {
+    header("Location: userprofile.php");exit;
+}
 if ($_POST) {
     if (isset($_POST["email"])) {
         if (empty($_POST["email"])) {
@@ -36,27 +39,18 @@ if ($_POST) {
         array_pop($usuariosGuardados);
         foreach ($usuariosGuardados as $usuario) {
             $usuarioFinal=json_decode($usuario,true);
-            /* if (($usuarioFinal["email"] == $_POST["email"]) && (password_verify($_POST["password"],$usuarioFinal["password"]))) {
-                header("Location: index.html");
-            }
-            elseif ($usuarioFinal["email"] != $_POST["email"]){
-                $errores["ingreso"]="El email es incorrecto";
+            if ($usuarioFinal['email'] == $_POST['email'] && password_verify($_POST['password'],$usuarioFinal['password'])) {
+                //aqui si lo logeo 
+                $_SESSION ['email'] = $usuarioFinal['email'];
+                if (isset($_POST['recordarme'])) {
+                  // creo la cookie de mantenerme logeado
+                  setcookie('email',$usuarioFinal['email'],time() + 60*60*24*30);
+                }
+                //por ahora redirecciono a la misma vista 
+                header('Location:userprofile.php');
             }
             else{
-                $errores["ingreso"]="La contraseña es incorrecta";
-            } */
-            if ($usuarioFinal["email"] == $_POST["email"]) {
-                if (password_verify($_POST["password"],$usuarioFinal["password"])) {
-                    $_SESSION["emailUsuario"] = $usuarioFinal["email"];
-                    if (isset($_POST["recordarme"]) && $_POST["recordarme"] == "on") {
-                        setcookie('emailUsuario', $usuarioFinal['email'], time() + 60 * 60 * 24 * 7);
-                        setcookie('passUsuario', $usuarioFinal['password'], time() + 60 * 60 * 24 * 7);
-                    }
-                    header("Location: userprofile.php");
-                }
-            }
-            elseif ($usuarioFinal["email"] != $_POST["email"]){
-                $errores["ingreso"]="El email o la contraseña son incorrectos";
+                $errores["password"]= "El usuario o la contraseña no existen";
             }
         }
     }
