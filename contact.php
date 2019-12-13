@@ -15,7 +15,7 @@
         <header>
             <div class="header">
                 <div class="logo">
-                    <a href="index.html"><img src="img/Logo Version 1.0.png" alt="logo"></a>
+                    <a href="index.php"><img src="img/Logo Version 1.0.png" alt="logo"></a>
                 </div>
             </div>
         </header>

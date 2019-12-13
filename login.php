@@ -102,7 +102,7 @@ if ($_POST) {
     <div class="container-login">
         <div class="header-login">
             <div class="logo">
-                <a href="index.html"><img src="img/Logo Version 1.0.png" alt="LOGO"></a>
+                <a href="index.php"><img src="img/Logo Version 1.0.png" alt="LOGO"></a>
             </div>
             <div class="page-name">
             </div>
@@ -131,7 +131,7 @@ if ($_POST) {
                     </div>
                     <br><br>
                     <div class="create">
-                        <a href="register.html">CREAR CUENTA</a>
+                        <a href="register.php">CREAR CUENTA</a>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="recordarme" name="recordarme">

@@ -15,7 +15,7 @@
         <header>
             <div class="header">
                 <div class="logo">
-                    <a href="index.html"><img src="img/Logo Version 1.0.png" alt="logo"></a>
+                    <a href="index.php"><img src="img/Logo Version 1.0.png" alt="logo"></a>
                 </div>
                 <div class="dropdown-categories">
                     <h3>
@@ -26,15 +26,15 @@
                     <input type="search" name="search" id="search" placeholder="BUSCAR PRODUCTOS, MARCAS Y MAS">
                 </div>
                 <div class="cart">
-                    <a href="cart.html"><img src="img/shopping-cart-solid.svg" alt="shopping-bag-solid"></a>
+                    <a href="cart.php"><img src="img/shopping-cart-solid.svg" alt="shopping-bag-solid"></a>
                 </div>
                 <div class="user-name">
                     <h3>
-                        <a href="userprofile.html">NOMBRE</a>
+                        <a href="userprofile.php">NOMBRE</a>
                     </h3>
                 </div>
                 <div class="account">
-                    <a href="#"><img src="img/account.svg" alt="account"></a> 
+                    <a href="userprofile.php"><img src="img/account.svg" alt="account"></a> 
                 </div>
             </div>
         </header>
