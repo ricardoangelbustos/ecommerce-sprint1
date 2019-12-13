@@ -80,6 +80,22 @@ if ($_POST) {
         margin-left:50px;
         font-size: 20px;
     }
+    /* MODIFICA EL EMAIL QUE SE MUEVE Y NI IDEA POR QUE */
+    .email i{
+        position: relative;
+        right: 3%;
+    }
+    .email{
+        color: orange;
+        text-decoration: none;
+        position: relative;
+        right: 2%;
+    }
+    .email a:hover{
+        transition: 500ms;
+	    color: #62d1ec;
+    }
+    /*HASTA ACA */
     </style>
 </head>
 <body>

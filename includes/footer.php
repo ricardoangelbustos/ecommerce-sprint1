@@ -3,13 +3,13 @@
 <img src="img/Logo Version 1.0.png">
     <h3>About<span>AↃBA</span></h3>
     <p class="footer-links">
-        <a href="index.html">Home</a>
+        <a href="index.php">Home</a>
         |
-        <a href="#">Blog</a>
+        <a href="faq.php">FAQ</a>
         |
-        <a href="about.html">About</a>
+        <a href="about.php">About</a>
         |
-        <a href="contact.html">Contact</a>
+        <a href="contact.php">Contact</a>
     </p>
     <p class="footer-company-name">© 2019 ACBA.</p>
 </div>

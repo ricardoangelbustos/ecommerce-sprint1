@@ -182,6 +182,18 @@ if ($_POST) {
         margin-left: 20px;
         font-family: 'Roboto', sans-serif;
     }
+    /* MODIFICA EL EMAIL QUE SE MUEVE Y NI IDEA POR QUE */
+    .email{
+        color: orange;
+        text-decoration: none;
+        position: relative;
+        right: 4%;
+    }
+    .email a:hover{
+        transition: 500ms;
+	    color: #62d1ec;
+    }
+    /*HASTA ACA */
     </style>
 </head>
 <body>
