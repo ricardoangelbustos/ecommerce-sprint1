@@ -15,11 +15,6 @@ if (!isset($_COOKIE["email"])) {
     <link rel="stylesheet" href="css/style-userprofile.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <style>
-    /* MODIFICA EL EMAIL QUE SE MUEVE Y NI IDEA POR QUE */
-    
-    /*HASTA ACA */
-    </style>
 </head>
 <body>
     <div class="container">
