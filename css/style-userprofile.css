@@ -549,3 +549,12 @@ footer{
         width: 100%;
     }
 }
+/*ESTILOS ADICIONALES*/
+.email{
+    color: orange;
+    text-decoration: none;
+}
+.email a:hover{
+    transition: 500ms;
+    color: #62d1ec;
+}

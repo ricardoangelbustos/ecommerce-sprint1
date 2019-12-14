@@ -17,14 +17,7 @@ if (!isset($_COOKIE["email"])) {
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <style>
     /* MODIFICA EL EMAIL QUE SE MUEVE Y NI IDEA POR QUE */
-    .email{
-        color: orange;
-        text-decoration: none;
-    }
-    .email a:hover{
-        transition: 500ms;
-	    color: #62d1ec;
-    }
+    
     /*HASTA ACA */
     </style>
 </head>
