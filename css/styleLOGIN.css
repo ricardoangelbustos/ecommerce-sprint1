@@ -37,7 +37,7 @@
     width: 183px;
     height: 62px;
 }
-.email{
+.email1{
     /*background-color: darkgray;*/
     width: 90%;
     height: 50px;
@@ -46,11 +46,19 @@
     align-items: center;
     box-sizing: border-box;
 }
-.email input{
+.email1 input{
     width: 550px;
     height: 30px;
     border-radius: 15px;
     border: 1px solid #b97778;
+}
+.email{
+    text-decoration: none;
+    color: orange;
+}
+.email:hover{
+    transition: 500ms;
+	color: #62d1ec;
 }
 .container-login{
     width: 100%;
@@ -343,4 +351,16 @@ footer{
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+}
+/*ESTILOS ADICIONALES*/
+small{
+    font-size: 20px;
+    color: red;
+    display: block;
+    font-weight: 800;
+
+}
+.form-check{
+    margin-left:50px;
+    font-size: 20px;
 }

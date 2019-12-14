@@ -68,35 +68,6 @@ if ($_POST) {
     <link rel="stylesheet" href="css/styleLOGIN.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <style>
-    small{
-        font-size: 20px;
-        color: red;
-        display: block;
-        font-weight: 800;
-    
-    }
-    .form-check{
-        margin-left:50px;
-        font-size: 20px;
-    }
-    /* MODIFICA EL EMAIL QUE SE MUEVE Y NI IDEA POR QUE */
-    .email i{
-        position: relative;
-        right: 3%;
-    }
-    .email{
-        color: orange;
-        text-decoration: none;
-        position: relative;
-        right: 2%;
-    }
-    .email a:hover{
-        transition: 500ms;
-	    color: #62d1ec;
-    }
-    /*HASTA ACA */
-    </style>
 </head>
 <body>
     <div class="container-login">
@@ -117,7 +88,7 @@ if ($_POST) {
             <div class="container-1">
                 <br><br>
                 <form action="login.php" method="POST">
-                    <div class="email">
+                    <div class="email1">
                         <input id="email" type="text" name="email" value="" placeholder="EMAIL">
                         <small><?= (isset($errores["email"])) ? $errores["email"] : "" ?></small>
                     </div>
