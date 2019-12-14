@@ -70,55 +70,57 @@ if ($_POST) {
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-login">
-        <div class="header-login">
-            <div class="logo">
-                <a href="index.php"><img src="img/Logo Version 1.0.png" alt="LOGO"></a>
+    <main>
+        <div class="container-login">
+            <div class="header-login">
+                <div class="logo">
+                    <a href="index.php"><img src="img/Logo Version 1.0.png" alt="LOGO"></a>
+                </div>
+                <div class="page-name">
+                </div>
             </div>
-            <div class="page-name">
+            <br><br>
+            <div class="h1-login">
+                <h1>
+                    INGRESA TU EMAIL Y CONTRASEÑA
+                </h1>
             </div>
-        </div>
-        <br><br>
-        <div class="h1-login">
-            <h1>
-                INGRESA TU EMAIL Y CONTRASEÑA
-            </h1>
-        </div>
-        <section>
-            <div class="container-1">
-                <br><br>
-                <form action="login.php" method="POST">
-                    <div class="email1">
-                        <input id="email" type="text" name="email" value="" placeholder="EMAIL">
-                        <small><?= (isset($errores["email"])) ? $errores["email"] : "" ?></small>
-                    </div>
-                    <div class="password-login">
-                        <input id="password" type="password" name="password" value="" placeholder="CONTRASEÑA">
-                        <small><?= (isset($errores["password"])) ? $errores["password"] : "" ?></small>
-                        <small><?= (isset($errores["ingreso"])) ? $errores["ingreso"] : "" ?></small><!--BORRAR ESTO-->
-                    </div>
-                    <div class="forget">
-                        <a href="#">OLVIDE EL EMAIL/CONTRASEÑA</a>
-                    </div>
+            <section>
+                <div class="container-1">
                     <br><br>
-                    <div class="create">
-                        <a href="register.php">CREAR CUENTA</a>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="recordarme" name="recordarme">
-                        <label class="form-check-label" for="recordarme">Recordarme como usuario</label>
-                    </div>
-                    <div class="button-img">
-                        <!-- <a href="#"><img src="img/right-arrow.svg" alt="right-arrow"></a> -->
-                        <input type="image" src=img/right-arrow.svg alt="right-arrow">
-                    </div>
-                </form>
-            </div>
-        </section>
-        <?php
-        include 'includes/footer.php';
-        ?>
-            </div>
-        </body>
-        </html>
+                    <form action="login.php" method="POST">
+                        <div class="email1">
+                            <input id="email" type="text" name="email" value="" placeholder="EMAIL">
+                            <small><?= (isset($errores["email"])) ? $errores["email"] : "" ?></small>
+                        </div>
+                        <div class="password-login">
+                            <input id="password" type="password" name="password" value="" placeholder="CONTRASEÑA">
+                            <small><?= (isset($errores["password"])) ? $errores["password"] : "" ?></small>
+                            <small><?= (isset($errores["ingreso"])) ? $errores["ingreso"] : "" ?></small><!--BORRAR ESTO-->
+                        </div>
+                        <div class="forget">
+                            <a href="#">OLVIDE EL EMAIL/CONTRASEÑA</a>
+                        </div>
+                        <br><br>
+                        <div class="create">
+                            <a href="register.php">CREAR CUENTA</a>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="recordarme" name="recordarme">
+                            <label class="form-check-label" for="recordarme">Recordarme como usuario</label>
+                        </div>
+                        <div class="button-img">
+                            <!-- <a href="#"><img src="img/right-arrow.svg" alt="right-arrow"></a> -->
+                            <input type="image" src=img/right-arrow.svg alt="right-arrow">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <?php
+            include 'includes/footer.php';
+            ?>
+        </div>
+    </main>
+</body>
+</html>
         

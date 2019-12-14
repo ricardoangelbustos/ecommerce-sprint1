@@ -166,83 +166,85 @@ if ($_POST) {
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="header">
-                <div class="logo">
-                    <a href="index.php"><img src="img/Logo Version 1.0.png" alt="logo"></a>
+    <main>
+        <div class="container">
+            <header>
+                <div class="header">
+                    <div class="logo">
+                        <a href="index.php"><img src="img/Logo Version 1.0.png" alt="logo"></a>
+                    </div>
                 </div>
+            </header>
+            <br>
+            <div class="title">
+                <h1>
+                    COMPLETA TUS DATOS
+                </h1>
             </div>
-        </header>
-        <br>
-        <div class="title">
-            <h1>
-                COMPLETA TUS DATOS
-            </h1>
+            <section>
+                <div class="register">
+                    <form action="register.php" method="POST" enctype="multipart/form-data">
+                        <br>
+                        <div class="names">
+                            <input id="name" type="text" name="nombre" value="<?=$nombre?>" placeholder="NOMBRE">
+                            <small><?= (isset($errores["nombre"])) ? $errores["nombre"] : ""?></small>
+                            <input id="surname" type="text" name="apellido" value="<?=$apellido?>" placeholder="APELLIDO">
+                            <small><?= (isset($errores["apellido"])) ? $errores["apellido"] : ""?></small>
+                        </div>
+                        <br>
+                        <div class="age-gender">
+                        <input class="edad" type="text" name="edad" id="age" value="<?=$edad?>" placeholder="EDAD">
+                        <small><?= (isset($errores["edad"])) ? $errores["edad"] : ""?></small>
+                        <select class="" name="genero">
+                                <?php foreach ($generos as $codigo => $genero) : ?>
+                                    <?php if ($_POST["genero"] == $codigo) : ?> 
+                                        <option value="<?=$codigo?>" selected> 
+                                            <?=$genero?>
+                                        </option>
+                                    <?php else : ?>
+                                        <option value="<?=$codigo?>">
+                                            <?=$genero?>
+                                        </option>
+                                    <?php endif; //Toda esta estrutura mantiene lo que se haya elegido en el select?>
+                                <?php endforeach;//este foreach asigna los codigos a cada casa?>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="email1">
+                            <input id="email" type="text" name="email" value="<?=$email?>" placeholder="EMAIL">
+                            <small><?= (isset($errores["email"])) ? $errores["email"] : ""?></small>
+                        </div>
+                        <br>
+                        <div class="pass">
+                            <input id="password" type="password" name="password" value="<?=$password?>" placeholder="CONTRASEÑA">
+                            <small><?= (isset($errores["password"])) ? $errores["password"] : ""?></small>
+                            <input id="password" type="password" name="repassword" value="<?=$repassword?>" placeholder="REPETIR CONTRASEÑA">
+                            <small><?= (isset($errores["repassword"])) ? $errores["repassword"] : ""?></small>
+                        </div>
+                        <br>
+                        <div class="img">
+                            <label for="">Foto de perfil</label><br>
+                            <input type="file" name="imagen" id="">
+                            <small><?= (isset($errores["imagen"])) ? $errores["imagen"] : ""?></small>
+                        </div>    
+                        <div class="checkboxes-button">
+                            <input type="checkbox" name="terms" value="yes-terms">     Acepto los terminos y condiciones <br><br>
+                            <div>
+                                <input type="checkbox" name="news" value="yes-promo" >     Deseo recibir actualizaciones y ofertas
+                            </div>
+                            <!-- <a id="bot" href="index.html"><img src="img/right-arrow.svg" alt="right-arrow"></a> -->
+                            <div class="achicar"> 
+                                <input type="image" src=img/right-arrow.svg alt="right-arrow">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <?php
+            include 'includes/footer.php';
+            ?>
         </div>
-        <section>
-            <div class="register">
-                <form action="register.php" method="POST" enctype="multipart/form-data">
-                    <br>
-                    <div class="names">
-                        <input id="name" type="text" name="nombre" value="<?=$nombre?>" placeholder="NOMBRE">
-                        <small><?= (isset($errores["nombre"])) ? $errores["nombre"] : ""?></small>
-                        <input id="surname" type="text" name="apellido" value="<?=$apellido?>" placeholder="APELLIDO">
-                        <small><?= (isset($errores["apellido"])) ? $errores["apellido"] : ""?></small>
-                    </div>
-                    <br>
-                    <div class="age-gender">
-                       <input class="edad" type="text" name="edad" id="age" value="<?=$edad?>" placeholder="EDAD">
-                       <small><?= (isset($errores["edad"])) ? $errores["edad"] : ""?></small>
-                       <select class="" name="genero">
-                            <?php foreach ($generos as $codigo => $genero) : ?>
-                                <?php if ($_POST["genero"] == $codigo) : ?> 
-                                    <option value="<?=$codigo?>" selected> 
-                                        <?=$genero?>
-                                    </option>
-                                <?php else : ?>
-                                    <option value="<?=$codigo?>">
-                                        <?=$genero?>
-                                    </option>
-                                <?php endif; //Toda esta estrutura mantiene lo que se haya elegido en el select?>
-                            <?php endforeach;//este foreach asigna los codigos a cada casa?>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="email1">
-                        <input id="email" type="text" name="email" value="<?=$email?>" placeholder="EMAIL">
-                        <small><?= (isset($errores["email"])) ? $errores["email"] : ""?></small>
-                    </div>
-                    <br>
-                    <div class="pass">
-                        <input id="password" type="password" name="password" value="<?=$password?>" placeholder="CONTRASEÑA">
-                        <small><?= (isset($errores["password"])) ? $errores["password"] : ""?></small>
-                        <input id="password" type="password" name="repassword" value="<?=$repassword?>" placeholder="REPETIR CONTRASEÑA">
-                        <small><?= (isset($errores["repassword"])) ? $errores["repassword"] : ""?></small>
-                    </div>
-                    <br>
-                    <div class="img">
-                        <label for="">Foto de perfil</label><br>
-                        <input type="file" name="imagen" id="">
-                        <small><?= (isset($errores["imagen"])) ? $errores["imagen"] : ""?></small>
-                    </div>    
-                    <div class="checkboxes-button">
-                        <input type="checkbox" name="terms" value="yes-terms">     Acepto los terminos y condiciones <br><br>
-                        <div>
-                            <input type="checkbox" name="news" value="yes-promo" >     Deseo recibir actualizaciones y ofertas
-                        </div>
-                        <!-- <a id="bot" href="index.html"><img src="img/right-arrow.svg" alt="right-arrow"></a> -->
-                        <div class="achicar"> 
-                            <input type="image" src=img/right-arrow.svg alt="right-arrow">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <?php
-        include 'includes/footer.php';
-        ?>
-            </div>
-        </body>
-        </html>
+    </main>
+</body>
+</html>
         

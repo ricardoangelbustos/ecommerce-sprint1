@@ -223,6 +223,9 @@ h1{
     padding-right: 40px;
     line-height: 20px;
 }
+.aside{
+    padding-left: 10%;
+}
 .description h3{
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
