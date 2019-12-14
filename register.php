@@ -15,7 +15,9 @@ $repassword="";
 $imagen="";
 
 //SI SE ROMPE TODO EMPEZAR A BORRAR ACA...
-
+if (isset($_COOKIE["email"])) {
+    header("Location: userprofile.php");exit;
+}
 if ($_FILES) {
     if ($_FILES["imagen"]["error"] != 0) {
         $errores["imagen"]="Hubo un error al cargar la imagen de perfil <br>";
