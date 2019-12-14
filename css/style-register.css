@@ -82,7 +82,7 @@ form{
     border-radius: 15px;
     border: 1px solid #b97778;
 }
-.email{
+.email1{
     /*background-color: darkgray;*/
     width: 100%;
     height: auto;
@@ -92,12 +92,21 @@ form{
     padding-right: 20px;
     box-sizing: border-box;
 }
-.email input{
+.email1 input{
     width: 100%;
     height: auto;
     border-radius: 15px;
     border: 1px solid #b97778;
 }
+.email{
+    text-decoration: none;
+    color: orange;
+}
+.email:hover{
+    transition: 500ms;
+	color: #62d1ec;
+}
+
 .pass{
     /*background-color: darkkhaki;*/
     width: 100%;
@@ -309,3 +318,23 @@ footer{
 	}
 }
 /*FINALIZA FOOTER*/
+/*ESTILOS ADICIONALES*/
+small{
+    font-size: 15px;
+    color: red;
+    display: block;
+    font-weight: 200;
+}
+.achicar input{
+    width:50px;
+}    
+.edad{
+    width: 70%;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid #b97778;
+}
+.img{
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}

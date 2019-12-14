@@ -162,39 +162,6 @@ if ($_POST) {
     <link rel="stylesheet" href="css/style-register.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <style>
-    small{
-        font-size: 15px;
-        color: red;
-        display: block;
-        font-weight: 200;
-    }
-    .achicar input{
-        width:50px;
-    }    
-    .edad{
-        width: 70%;
-        height: 20px;
-        border-radius: 15px;
-        border: 1px solid #b97778;
-    }
-    .img{
-        margin-left: 20px;
-        font-family: 'Roboto', sans-serif;
-    }
-    /* MODIFICA EL EMAIL QUE SE MUEVE Y NI IDEA POR QUE */
-    .email{
-        color: orange;
-        text-decoration: none;
-        position: relative;
-        right: 4%;
-    }
-    .email a:hover{
-        transition: 500ms;
-	    color: #62d1ec;
-    }
-    /*HASTA ACA */
-    </style>
 </head>
 <body>
     <div class="container">
@@ -240,7 +207,7 @@ if ($_POST) {
                         </select>
                     </div>
                     <br>
-                    <div class="email">
+                    <div class="email1">
                         <input id="email" type="text" name="email" value="<?=$email?>" placeholder="EMAIL">
                         <small><?= (isset($errores["email"])) ? $errores["email"] : ""?></small>
                     </div>
