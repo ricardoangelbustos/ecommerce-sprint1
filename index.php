@@ -10,11 +10,11 @@
     <title>Bienvenidos</title>
 </head>
 <body>
-  
+
     <div class="container">
         <header class="header">
             <div class="logo">
-                    <a href="index.html"><img src="img/Logo Version 1.0.png" alt="logo"></a>
+                    <a href="index.php"><img src="img/Logo Version 1.0.png" alt="logo"></a>
             </div>
             <div class="dropdown">
                  <button class="dropbtn">categorías <i class="fas fa-angle-down" style="display:inline"></i></button>
@@ -31,22 +31,22 @@
                 <input type="search" name="search" id="search" placeholder=" BUSCAR PRODUCTOS, MARCAS Y MAS">
             </div>
             <div class="login">
-                <a class="login" href="login.html">LOGIN</a>
+                <a class="login" href="login.php">LOGIN</a>
             </div>
             <div class="singup">
-                <a href="register.html">SIGN UP</a>
+                <a href="register.php">SIGN UP</a>
             </div>
         </header>
         <div class="header-movil">
-                <a class="logo" href="index.html"><img src="Logo Version 1.0.png" alt="logo"></a>
+                <a class="logo" href="index.php"><img src="Logo Version 1.0.png" alt="logo"></a>
                 <div class="search">
                     <input type="search" name="search" id="search" placeholder=" BUSCAR PRODUCTOS, MARCAS Y MAS">
                 </div>
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
                 <ul class="menu">
-                    <li><a href="login.html">LOGIN</a></li>
-                    <li><a href="register.html">SING UP</a></li>
+                    <li><a href="login.php">LOGIN</a></li>
+                    <li><a href="register.php">SING UP</a></li>
                     <li>
                       <div class="categorias-nav">
                       <a href="#">REMERAS</a>
@@ -58,13 +58,13 @@
                       </div>
                     </li>
                 </ul>
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="userprofile.html"><i class="fas fa-user-circle"></i></a>  
+                <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
+                <a href="userprofile.php"><i class="fas fa-user-circle"></i></a>
         </div>
       <img class="img1" src="img/Image_1_A0_Rectangle_6_pattern@2x.PNG" alt="slider1">
       <img class="img1M" src="img/Zapatillas_A9_Rectangle_11_pattern@2x.png" alt="slider1">
       <h2 class="tendencias-title">TENDENCIAS</h2>
-          <img class="img2M" src="img/Image_3_A9_Rectangle_14_pattern@2x.png" alt="tendencia1movil">  
+          <img class="img2M" src="img/Image_3_A9_Rectangle_14_pattern@2x.png" alt="tendencia1movil">
       <div class="tendenciasM"></div>
           <img class="img3M" src="img/Image_4_A9_Rectangle_16_pattern@2x.png" alt="tendenica2movil">
       <h2 class="title-categoriasM">CATEGORIAS</h2>
@@ -146,13 +146,13 @@
           <img src="img/Logo Version 1.0.png">
 				<h3>About<span>AↃBA</span></h3>
 				<p class="footer-links">
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                     |
                     <a href="#">Blog</a>
                     |
-                    <a href="about.html">About</a>
+                    <a href="about.php">About</a>
                     |
-					<a href="contact.html">Contact</a>
+					<a href="contact.php">Contact</a>
 				</p>
 				<p class="footer-company-name">© 2019 ACBA.</p>
 			</div>
@@ -182,6 +182,6 @@
 		</footer>
 
   </div>
-        
+
 </body>
 </html>
