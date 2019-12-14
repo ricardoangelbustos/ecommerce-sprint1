@@ -41,7 +41,7 @@ if ($_POST) {
             $usuarioFinal=json_decode($usuario,true);
             if ($usuarioFinal['email'] == $_POST['email'] && password_verify($_POST['password'],$usuarioFinal['password'])) {
                 //aqui si lo logeo 
-                $_SESSION ['email'] = $usuarioFinal['email'];
+                $_SESSION['email'] = $usuarioFinal['email'];
                 if (isset($_POST['recordarme'])) {
                   // creo la cookie de mantenerme logeado
                   setcookie('email',$usuarioFinal['email'],time() + 60*60*24*30);
@@ -123,4 +123,3 @@ if ($_POST) {
     </main>
 </body>
 </html>
-        

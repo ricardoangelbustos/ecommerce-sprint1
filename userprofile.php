@@ -1,5 +1,7 @@
 <?php
-if (!isset($_COOKIE["email"])) {
+session_start();
+// var_dump($_SESSION);exit;
+if (!isset($_COOKIE["email"]) && !$_SESSION['email']) {
     header("Location: login.php");exit;
 }
 
@@ -80,7 +82,7 @@ if (!isset($_COOKIE["email"])) {
                                 </div>
                                 <button class="boton-5"><p>CONFIGURACION</p></button>
                             </div>
-                        </aside>  
+                        </aside>
                     </div>
                     <div class="general-center">
                         <section>
@@ -170,7 +172,6 @@ if (!isset($_COOKIE["email"])) {
             include 'includes/footer.php';
             ?>
         </div>
-    </main>
+    </main>  
 </body>
 </html>
-        
