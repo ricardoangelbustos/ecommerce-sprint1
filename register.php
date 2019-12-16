@@ -82,7 +82,7 @@ if ($_POST) {
     //ESPACIO PARA SELECT GENERO
     if (isset($_POST["email"])) {
         if (empty($_POST["email"])) {
-            $errores["email"]= "El campo email es obligatorio";
+            $errores["email"]= " El campo email es obligatorio";
         }
         elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
             $errores["email"]="No es un email valido";

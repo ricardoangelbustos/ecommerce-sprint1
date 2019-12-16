@@ -3,10 +3,12 @@ session_start();
 $errores=[];
 $email="";
 $password="";
+$nombres=[];
 $usuariosGuardados=[];
 $usuarioFinal=[];
-/* var_dump($_SESSION);
-var_dump($_COOKIE); */
+$username=[];                   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+var_dump($_SESSION);
+var_dump($_COOKIE);
 if (isset($_COOKIE["email"])) {
     header("Location: userprofile.php");exit;
 }
@@ -42,6 +44,7 @@ if ($_POST) {
             if ($usuarioFinal['email'] == $_POST['email'] && password_verify($_POST['password'],$usuarioFinal['password'])) {
                 //aqui si lo logeo 
                 $_SESSION['email'] = $usuarioFinal['email'];
+                setcookie('nombre',$usuarioFinal['nombre'],time() + 60*60*24*30); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 if (isset($_POST['recordarme'])) {
                   // creo la cookie de mantenerme logeado
                   setcookie('email',$usuarioFinal['email'],time() + 60*60*24*30);

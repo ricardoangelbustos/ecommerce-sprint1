@@ -1,10 +1,12 @@
 <?php
 session_start();
 // var_dump($_SESSION);exit;
+$nombre = "";
+var_dump($_COOKIE);
 if (!isset($_COOKIE["email"]) && !$_SESSION['email']) {
     header("Location: login.php");exit;
 }
-
+$nombre = $_COOKIE["nombre"] ;  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,11 +41,15 @@ if (!isset($_COOKIE["email"]) && !$_SESSION['email']) {
                     </div>
                     <div class="user-name">
                         <h3>
-                            <a href="userprofile.php">NOMBRE</a>
+                        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                            <a href="userprofile.php">Bienvenido <?= $nombre ?></a>             
                         </h3>
                     </div>
                     <div class="account">
                         <a href="userprofile.php"><img src="img/account.svg" alt="account"></a>
+                    </div>
+                    <div class="logout">
+                        <a href="logout.php"><i class="fas fa-sign-out-alt"></i></a>
                     </div>
                 </div>
             </header>
@@ -52,7 +58,6 @@ if (!isset($_COOKIE["email"]) && !$_SESSION['email']) {
                     <div class="option-left">
                         <aside>
                             <div class="my-account">
-                                <a href="logout.php">DESLOGUEARSE</a>
                                 <div>
                                     <img src="img/account.svg" alt="account">
                                 </div>

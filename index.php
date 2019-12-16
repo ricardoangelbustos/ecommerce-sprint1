@@ -1,3 +1,18 @@
+<?php
+session_start();
+if (isset($_SESSION["email"])) {
+        $nombre = $_COOKIE["nombre"];
+        $dir1 = "userprofile.php";
+        $botonnav = "MI CARRITO";
+        $dir2 = "cart.php";
+    }   
+else{
+    $nombre = "LOGIN";
+    $dir1 = "login.php";
+    $botonnav ="SIGN UP";
+    $dir2 = "register.php";
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -30,11 +45,11 @@
               <div class="search">
                 <input type="search" name="search" id="search" placeholder=" BUSCAR PRODUCTOS, MARCAS Y MAS">
             </div>
-            <div class="login">
-                <a class="login" href="login.php">LOGIN</a>
+            <div class="botonnav1">
+                <a class="botonnav1" href="<?= $dir1?>"> <?= $nombre?> </a>
             </div>
-            <div class="singup">
-                <a href="register.php">SIGN UP</a>
+            <div class="botonnav2">
+                <a href="<?= $dir2?>"><?= $botonnav?></a>
             </div>
         </header>
         <div class="header-movil">
@@ -45,8 +60,7 @@
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
                 <ul class="menu">
-                    <li><a href="login.php">LOGIN</a></li>
-                    <li><a href="register.php">SING UP</a></li>
+                    
                     <li>
                       <div class="categorias-nav">
                       <a href="#">REMERAS</a>
@@ -141,47 +155,10 @@
     </div>
 
       </section>
-      <footer class="footer-distributed">
-			<div class="footer-left">
-          <img src="img/Logo Version 1.0.png">
-				<h3>About<span>AↃBA</span></h3>
-				<p class="footer-links">
-                    <a href="index.php">Home</a>
-                    |
-                    <a href="#">Blog</a>
-                    |
-                    <a href="about.php">About</a>
-                    |
-					<a href="contact.php">Contact</a>
-				</p>
-				<p class="footer-company-name">© 2019 ACBA.</p>
-			</div>
-			<div class="footer-center">
-				<div>
-					<i class="fa fa-map-marker"></i><p style="margin-inline-start: 70px;">309 - Santa Fe, Bldg. No. A - 1 Buenos Aires, CABA - 400710</p>
-				</div>
-				<div>
-					<i class="fa fa-phone"></i>
-					<a href="tel:+91 22-27782183" class="phone">+91 22-27782183</a>
-				</div>
-					<i class="fa fa-envelope"></i>
-					<a href="mailto:support@ACBA.com" class="email">support@ACBA.com</a>
-			</div>
-			<div class="footer-right">
-				<p class="footer-company-about">
-					<span>About the company</span>
-					We offer clothes from the most recognized brands in the world.</p>
-				<div class="footer-icons">
-					<a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-					<a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-					<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-					<a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-					<a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-				</div>
-			</div>
-		</footer>
-
-  </div>
+      <?php
+            include 'includes/footer.php';
+        ?>
+    </div>
 
 </body>
 </html>
