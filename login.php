@@ -7,8 +7,8 @@ $nombres=[];
 $usuariosGuardados=[];
 $usuarioFinal=[];
 $username=[];                   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-var_dump($_SESSION);
-var_dump($_COOKIE);
+/* var_dump($_SESSION);
+var_dump($_COOKIE); */
 if (isset($_COOKIE["email"])) {
     header("Location: userprofile.php");exit;
 }

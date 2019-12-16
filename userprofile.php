@@ -2,7 +2,7 @@
 session_start();
 // var_dump($_SESSION);exit;
 $nombre = "";
-var_dump($_COOKIE);
+/* var_dump($_COOKIE); */
 if (!isset($_COOKIE["email"]) && !$_SESSION['email']) {
     header("Location: login.php");exit;
 }
