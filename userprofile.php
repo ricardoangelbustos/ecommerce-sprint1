@@ -49,7 +49,7 @@ $nombre = $_COOKIE["nombre"] ;  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                         <a href="userprofile.php"><img src="img/account.svg" alt="account"></a>
                     </div>
                     <div class="logout">
-                        <a href="logout.php"><i class="fas fa-sign-out-alt"></i></a>
+                        <a href="logout.php"><i class="fas fa-sign-out-alt" style= "font-size:30px;"></i></a>
                     </div>
                 </div>
             </header>
