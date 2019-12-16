@@ -32,7 +32,7 @@ else{
                     <a href="index.php"><img src="img/Logo Version 1.0.png" alt="logo"></a>
             </div>
             <div class="dropdown">
-                 <button class="dropbtn">categorías <i class="fas fa-angle-down" style="display:inline"></i></button>
+                 <button class="dropbtn">CATEGORÍAS <i class="fas fa-angle-down" style="display:inline"></i></button>
                 <div class="dropdown-content">
                 <a href="#">REMERAS</a>
                 <a href="#">PANTALONES</a>
