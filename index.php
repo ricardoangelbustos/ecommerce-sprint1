@@ -5,12 +5,14 @@ if (isset($_SESSION["email"])) {
         $dir1 = "userprofile.php";
         $botonnav = "MI CARRITO";
         $dir2 = "cart.php";
+        $dir3 = "cart.php";
     }   
 else{
     $nombre = "LOGIN";
     $dir1 = "login.php";
     $botonnav ="SIGN UP";
     $dir2 = "register.php";
+    $dir3 = "login.php";
 }
 ?>
 <!DOCTYPE html>
@@ -72,8 +74,8 @@ else{
                       </div>
                     </li>
                 </ul>
-                <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
-                <a href="userprofile.php"><i class="fas fa-user-circle"></i></a>
+                <a href="<?= $dir3?>"><i class="fas fa-shopping-cart"></i></a>
+                <a href="<?= $dir1?>"><i class="fas fa-user-circle"></i></a>
         </div>
       <img class="img1" src="img/Image_1_A0_Rectangle_6_pattern@2x.PNG" alt="slider1">
       <img class="img1M" src="img/Zapatillas_A9_Rectangle_11_pattern@2x.png" alt="slider1">

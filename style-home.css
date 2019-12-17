@@ -339,6 +339,7 @@
         display: inline-block;
         color: #ffffff;
         vertical-align: middle;
+        padding-inline-start: 70px;
         
     }
     .footer-distributed .footer-center p a{
@@ -347,7 +348,7 @@
     }
     .fa-map-marker{
         position: absolute;
-        bottom: 390px;}
+        bottom: 350px;}
     /* Footer Right */
     
     .footer-distributed .footer-company-about{
@@ -393,7 +394,18 @@
         display: none;
     }
 
-
+.botonnav1 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+}
+.botonnav2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin-right: 10px;
+}
 .header{
     display: flex;
     align-items: center;
@@ -416,7 +428,7 @@
 .dropbtn {
     background-color: #3e64ff;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     border: none;
   }
   
@@ -462,20 +474,19 @@
 
 /*FIN BARRA DE BUSQUEDA*/
 
-.botonnav2{margin-right: 15px;} 
+.singup{margin-right: 15px;} 
 
 
-.botonnav1 a,.botonnav2 a{
+.login a,.singup a{
     text-decoration: none;
-    text-transform: uppercase;
     color: black;
     font-size: 30px;
 }
-.botonnav1 a:hover{
+.login a:hover{
     transition: 500ms;
     color: white;
 }
-.botonnav2 a:hover{
+.singup a:hover{
     transition: 500ms;
     color: white;
 }
@@ -685,7 +696,8 @@ footer{
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
-	margin:0;
+    margin:0;
+    padding-inline-start: 70px;
 }
 .footer-distributed .footer-center p span{
 	display:block;

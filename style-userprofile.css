@@ -42,11 +42,11 @@ body{
     border: 1px solid #4469fd;
 }
 .cart{
-    margin-left: 70px;
+    margin-left: 50px;
     width: 30px;
 }
 .user-name{
-    margin-left: 40px;
+    margin-left: 20px;
     font-family: 'Roboto', sans-serif;
 }
 .user-name a{
@@ -58,13 +58,13 @@ body{
     color: white;
 }
 .account{
-    margin-left: 20px;
+    margin-left: 10px;
 }
-/* nuevo */
-.logout{
-    margin: 0 20px;
+
+.fa-sign-out-alt{
     color: black;
-    font-size: 23px;
+    margin: 0 20px;
+    font-size: 25px;
 }
 /*FINALIZA HEADER*/
 /*INICIA PARTE PRINCIPAL*/
