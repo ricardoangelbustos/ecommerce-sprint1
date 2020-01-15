@@ -68,7 +68,7 @@ if ($_POST) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ingresa con tu cuenta</title>
     <script src="https://kit.fontawesome.com/81327c1797.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styleLOGIN.css">
+    <link rel="stylesheet" href="css/style-login.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
