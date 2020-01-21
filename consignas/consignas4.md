@@ -21,14 +21,11 @@ los cambios se apliquen a la rama principal.
 
 ● Se debe utilizar PDO para dialogar con la base de datos.
 
-<h3>Paara el E-COMMERCE</h3>
+<h3>Para el E-COMMERCE</h3>
 
 ● A/B/M de productos
 
 <h3>Requerimientos opcionales</h3>
-
-● Los formularios de login y registro no deberían ser accesibles si el usuario ya está
-logueado.
 
 ● Realizar un diccionario de datos de nuestra aplicación.
 
