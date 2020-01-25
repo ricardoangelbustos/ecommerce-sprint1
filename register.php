@@ -1,5 +1,13 @@
 <?php
-
+//INICIA CONEXION A BASE DE DATOS
+$link = new PDO(
+    'mysql:host=localhost;dbname=acba',
+    'root',
+    '',
+    $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')//Caracteres especiales
+);
+$link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);//Deteccion de errores
+//FINALIZA CONEXION A BASE DE DATOS
 $errores=[];
 $nombre="";
 $apellido="";
@@ -140,8 +148,16 @@ if ($_POST) {
             "terminos"=>$_POST["terms"],
             "newsletter"=>$_POST["news"]
         ];
-        $elUsuario=json_encode($usuarioParaGuardar);
-        file_put_contents("usuarios.json",$elUsuario.PHP_EOL,FILE_APPEND);
+        /* $elUsuario=json_encode($usuarioParaGuardar);
+        file_put_contents("usuarios.json",$elUsuario.PHP_EOL,FILE_APPEND); */
+        //Instruccion del sql
+        $sql= "INSERT INTO users(nombre, apellido, edad, email, genero, contraseña, newsletter) values ('$usuarioParaGuardar[nombre]','$usuarioParaGuardar[apellido]','$usuarioParaGuardar[edad]','$usuarioParaGuardar[email]','$usuarioParaGuardar[genero]','$usuarioParaGuardar[password]','$usuarioParaGuardar[newsletter]')";
+
+        //Preparar el statement
+        $stmt = $link->prepare($sql);
+
+        //Ejecutar el statement
+        $stmt->execute();
         header("Location: login.php");
     }
 }
