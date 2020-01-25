@@ -88,13 +88,17 @@ if ($_POST) {
                     <br><br>
                     <form action="login.php" method="POST">
                         <div class="email1">
-                            <input id="email" type="text" name="email" value="" placeholder="EMAIL">
-                            <small><?= (isset($errores["email"])) ? $errores["email"] : "" ?></small>
+                            <div class="correo">
+                                <input id="email" type="text" name="email" value="" placeholder="EMAIL">
+                                <small><?= (isset($errores["email"])) ? $errores["email"] : "" ?></small>
+                            </div>
                         </div>
                         <div class="password-login">
-                            <input id="password" type="password" name="password" value="" placeholder="CONTRASEÑA">
-                            <small><?= (isset($errores["password"])) ? $errores["password"] : "" ?></small>
-                            <small><?= (isset($errores["ingreso"])) ? $errores["ingreso"] : "" ?></small>
+                            <div class="pass1">
+                                <input id="password" type="password" name="password" value="" placeholder="CONTRASEÑA">
+                                <small><?= (isset($errores["password"])) ? $errores["password"] : "" ?></small>
+                                <small><?= (isset($errores["ingreso"])) ? $errores["ingreso"] : "" ?></small>
+                            </div>
                         </div>
                         <div class="forget">
                             <a href="#">OLVIDE EL EMAIL/CONTRASEÑA</a>
