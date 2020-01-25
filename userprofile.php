@@ -1,12 +1,10 @@
 <?php
 session_start();
-// var_dump($_SESSION);exit;
 $nombre = "";
-/* var_dump($_COOKIE); */
 if (!isset($_COOKIE["email"]) && !$_SESSION['email']) {
     header("Location: login.php");exit;
 }
-$nombre = $_COOKIE["nombre"] ;  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+$nombre = $_COOKIE["nombre"] ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +39,6 @@ $nombre = $_COOKIE["nombre"] ;  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                     </div>
                     <div class="user-name">
                         <h3>
-                        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
                             <a href="userprofile.php">Bienvenido <?= $nombre ?></a>             
                         </h3>
                     </div>

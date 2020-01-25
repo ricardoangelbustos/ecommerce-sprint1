@@ -14,7 +14,7 @@ $password="";
 $repassword="";
 $imagen="";
 
-//SI SE ROMPE TODO EMPEZAR A BORRAR ACA...
+
 if (isset($_COOKIE["email"])) {
     header("Location: userprofile.php");exit;
 }
@@ -30,12 +30,11 @@ if ($_FILES) {
         }
         else {
             move_uploaded_file($_FILES["imagen"]["tmp_name"], "imagen." . $ext);
-            //echo "<img src='imagen.$ext'>";//Muestra la imagen subida
         }   
     }
 }
 
-//...y TERMINAR DE BORRAR ACA
+
 if ($_POST) {
     if (isset($_POST["nombre"])) {
         if(empty($_POST["nombre"])){
@@ -79,7 +78,6 @@ if ($_POST) {
             $edad=$_POST["edad"];
         }
     }
-    //ESPACIO PARA SELECT GENERO
     if (isset($_POST["email"])) {
         if (empty($_POST["email"])) {
             $errores["email"]= " El campo email es obligatorio";
@@ -119,7 +117,6 @@ if ($_POST) {
             $repassword=$_POST["repassword"];
         }
     }
-    //BORRAR ACA
     if (isset($_POST["terms"])) {
         $_POST["terms"] = "siterms";
     }
@@ -132,9 +129,6 @@ if ($_POST) {
     else{
         $_POST["news"] = "nonews";
     }
-    /* if (count($errores) == 0) {
-        header("Location: index.html");
-    } CUALQUIER PROBLEMA DESCOMENTAR ESTO*/
     if (count($errores)==0) {
         $usuarioParaGuardar=[
             "nombre"=>trim($_POST["nombre"]),
@@ -205,8 +199,8 @@ if ($_POST) {
                                         <option value="<?=$codigo?>">
                                             <?=$genero?>
                                         </option>
-                                    <?php endif; //Toda esta estrutura mantiene lo que se haya elegido en el select?>
-                                <?php endforeach;//este foreach asigna los codigos a cada casa?>
+                                    <?php endif; ?>
+                                <?php endforeach;?>
                             </select>
                         </div>
                         <br>
@@ -232,7 +226,6 @@ if ($_POST) {
                             <div>
                                 <input type="checkbox" name="news" value="yes-promo" >     Deseo recibir actualizaciones y ofertas
                             </div>
-                            <!-- <a id="bot" href="index.html"><img src="img/right-arrow.svg" alt="right-arrow"></a> -->
                             <div class="achicar"> 
                                 <input type="image" src=img/right-arrow.svg alt="right-arrow">
                             </div>

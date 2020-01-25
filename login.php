@@ -6,9 +6,7 @@ $password="";
 $nombres=[];
 $usuariosGuardados=[];
 $usuarioFinal=[];
-$username=[];                   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-/* var_dump($_SESSION);
-var_dump($_COOKIE); */
+$username=[];
 if (isset($_COOKIE["email"])) {
     header("Location: userprofile.php");exit;
 }
@@ -32,9 +30,6 @@ if ($_POST) {
             $errores["password"]= "La contraseña debe contener mas de 8 caracteres";
         }
     }
-    /* if (count($errores) == 0) {
-        header("Location: index.html");
-    } CUALQUIER PROBLEMA DESCOMENTAR ESTO*/
     if (count($errores) == 0) {
         $usuariosGuardados = file_get_contents('usuarios.json');
         $usuariosGuardados = explode(PHP_EOL, $usuariosGuardados);
@@ -44,7 +39,7 @@ if ($_POST) {
             if ($usuarioFinal['email'] == $_POST['email'] && password_verify($_POST['password'],$usuarioFinal['password'])) {
                 //aqui si lo logeo 
                 $_SESSION['email'] = $usuarioFinal['email'];
-                setcookie('nombre',$usuarioFinal['nombre'],time() + 60*60*24*30); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                setcookie('nombre',$usuarioFinal['nombre'],time() + 60*60*24*30);
                 if (isset($_POST['recordarme'])) {
                   // creo la cookie de mantenerme logeado
                   setcookie('email',$usuarioFinal['email'],time() + 60*60*24*30);
@@ -99,7 +94,7 @@ if ($_POST) {
                         <div class="password-login">
                             <input id="password" type="password" name="password" value="" placeholder="CONTRASEÑA">
                             <small><?= (isset($errores["password"])) ? $errores["password"] : "" ?></small>
-                            <small><?= (isset($errores["ingreso"])) ? $errores["ingreso"] : "" ?></small><!--BORRAR ESTO-->
+                            <small><?= (isset($errores["ingreso"])) ? $errores["ingreso"] : "" ?></small>
                         </div>
                         <div class="forget">
                             <a href="#">OLVIDE EL EMAIL/CONTRASEÑA</a>
@@ -113,7 +108,6 @@ if ($_POST) {
                             <label class="form-check-label" for="recordarme">Recordarme como usuario</label>
                         </div>
                         <div class="button-img">
-                            <!-- <a href="#"><img src="img/right-arrow.svg" alt="right-arrow"></a> -->
                             <input type="image" src=img/right-arrow.svg alt="right-arrow">
                         </div>
                     </form>
