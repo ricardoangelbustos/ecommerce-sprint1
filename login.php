@@ -1,4 +1,15 @@
 <?php
+
+//INICIA CONEXION A BASE DE DATOS
+$link = new PDO(
+    'mysql:host=localhost;dbname=acba',
+    'root',
+    '',
+    $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')//Caracteres especiales
+);
+$link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);//Deteccion de errores
+//FINALIZA CONEXION A BASE DE DATOS
+
 session_start();
 $errores=[];
 $email="";
@@ -31,26 +42,38 @@ if ($_POST) {
         }
     }
     if (count($errores) == 0) {
-        $usuariosGuardados = file_get_contents('usuarios.json');
-        $usuariosGuardados = explode(PHP_EOL, $usuariosGuardados);
-        array_pop($usuariosGuardados);
-        foreach ($usuariosGuardados as $usuario) {
-            $usuarioFinal=json_decode($usuario,true);
-            if ($usuarioFinal['email'] == $_POST['email'] && password_verify($_POST['password'],$usuarioFinal['password'])) {
-                //aqui si lo logeo 
-                $_SESSION['email'] = $usuarioFinal['email'];
-                setcookie('nombre',$usuarioFinal['nombre'],time() + 60*60*24*30);
-                if (isset($_POST['recordarme'])) {
-                  // creo la cookie de mantenerme logeado
-                  setcookie('email',$usuarioFinal['email'],time() + 60*60*24*30);
+        
+        //Instruccion del sql
+        $sql= "SELECT email, contraseña FROM users";
+
+        //Preparar el statement
+        $stmt=$link->prepare($sql);
+
+        //Ejecutar el statement
+        $stmt->execute();
+
+        //Mostrar lo consultado
+        $usuarios=$stmt->fetchAll(PDO::FETCH_ASSOC);
+        /* var_dump($usuarios);exit; */
+        for ($i=0; $i < count($usuarios); $i++) { 
+            foreach ($usuarios as $usuario) {
+                if ($usuarios[$i]['email'] == $_POST['email'] && password_verify($_POST['password'],$usuarios[$i]['contraseña'])) {
+                    //aqui si lo logeo 
+                    $_SESSION['email'] = $usuarios[$i]['email'];
+                    setcookie('nombre',$usuarios[$i]['nombre'],time() + 60*60*24*30);
+                    if (isset($_POST['recordarme'])) {
+                      // creo la cookie de mantenerme logeado
+                      setcookie('email',$usuarios[$i]['email'],time() + 60*60*24*30);
+                    }
+                    //por ahora redirecciono a la misma vista 
+                    header('Location:userprofile.php');
                 }
-                //por ahora redirecciono a la misma vista 
-                header('Location:userprofile.php');
-            }
-            else{
-                $errores["password"]= "El usuario o la contraseña no existen";
+                else{
+                    $errores["password"]= "El usuario o la contraseña no existen";
+                }
             }
         }
+        
     }
 }
 
