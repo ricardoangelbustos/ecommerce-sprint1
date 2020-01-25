@@ -54,7 +54,6 @@ if ($_POST) {
 
         //Mostrar lo consultado
         $usuarios=$stmt->fetchAll(PDO::FETCH_ASSOC);
-        /* var_dump($usuarios);exit; */
         for ($i=0; $i < count($usuarios); $i++) { 
             foreach ($usuarios as $usuario) {
                 if ($usuarios[$i]['email'] == $_POST['email'] && password_verify($_POST['password'],$usuarios[$i]['contraseña'])) {
