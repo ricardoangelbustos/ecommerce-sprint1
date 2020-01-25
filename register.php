@@ -180,40 +180,54 @@ if ($_POST) {
                     <form action="register.php" method="POST" enctype="multipart/form-data">
                         <br>
                         <div class="names">
-                            <input id="name" type="text" name="nombre" value="<?=$nombre?>" placeholder="NOMBRE">
-                            <small><?= (isset($errores["nombre"])) ? $errores["nombre"] : ""?></small>
-                            <input id="surname" type="text" name="apellido" value="<?=$apellido?>" placeholder="APELLIDO">
-                            <small><?= (isset($errores["apellido"])) ? $errores["apellido"] : ""?></small>
+                            <div class="first-name">
+                                <input id="name" type="text" name="nombre" value="<?=$nombre?>" placeholder="NOMBRE">
+                                <small><?= (isset($errores["nombre"])) ? $errores["nombre"] : ""?></small>
+                            </div>
+                            <div class="surname">
+                                <input id="surname" type="text" name="apellido" value="<?=$apellido?>" placeholder="APELLIDO">
+                                <small><?= (isset($errores["apellido"])) ? $errores["apellido"] : ""?></small>
+                            </div>
                         </div>
                         <br>
                         <div class="age-gender">
-                        <input class="edad" type="text" name="edad" id="age" value="<?=$edad?>" placeholder="EDAD">
-                        <small><?= (isset($errores["edad"])) ? $errores["edad"] : ""?></small>
-                        <select class="" name="genero">
-                                <?php foreach ($generos as $codigo => $genero) : ?>
-                                    <?php if ($_POST["genero"] == $codigo) : ?> 
-                                        <option value="<?=$codigo?>" selected> 
-                                            <?=$genero?>
-                                        </option>
-                                    <?php else : ?>
-                                        <option value="<?=$codigo?>">
-                                            <?=$genero?>
-                                        </option>
-                                    <?php endif; ?>
-                                <?php endforeach;?>
-                            </select>
+                            <div class="age">
+                                <input class="edad" type="text" name="edad" id="age" value="<?=$edad?>" placeholder="EDAD">
+                                <small><?= (isset($errores["edad"])) ? $errores["edad"] : ""?></small>
+                            </div>
+                            <div class="gender">
+                                <select class="" name="genero">
+                                    <?php foreach ($generos as $codigo => $genero) : ?>
+                                        <?php if ($_POST["genero"] == $codigo) : ?> 
+                                                <option value="<?=$codigo?>" selected> 
+                                                    <?=$genero?>
+                                                </option>
+                                            <?php else : ?>
+                                                <option value="<?=$codigo?>">
+                                                    <?=$genero?>
+                                                </option>
+                                        <?php endif; ?>
+                                    <?php endforeach;?>
+                                </select>
+                            </div>
                         </div>
                         <br>
                         <div class="email1">
-                            <input id="email" type="text" name="email" value="<?=$email?>" placeholder="EMAIL">
-                            <small><?= (isset($errores["email"])) ? $errores["email"] : ""?></small>
+                            <div class="correo">
+                                <input id="email" type="text" name="email" value="<?=$email?>" placeholder="EMAIL">
+                                <small><?= (isset($errores["email"])) ? $errores["email"] : ""?></small>
+                            </div>
                         </div>
                         <br>
                         <div class="pass">
-                            <input id="password" type="password" name="password" value="<?=$password?>" placeholder="CONTRASEÑA">
-                            <small><?= (isset($errores["password"])) ? $errores["password"] : ""?></small>
-                            <input id="password" type="password" name="repassword" value="<?=$repassword?>" placeholder="REPETIR CONTRASEÑA">
-                            <small><?= (isset($errores["repassword"])) ? $errores["repassword"] : ""?></small>
+                            <div class="pass1">
+                                <input id="password" type="password" name="password" value="<?=$password?>" placeholder="CONTRASEÑA">
+                                <small><?= (isset($errores["password"])) ? $errores["password"] : ""?></small>
+                            </div>
+                            <div class="pass2">
+                                <input id="password" type="password" name="repassword" value="<?=$repassword?>" placeholder="REPETIR CONTRASEÑA">
+                                <small><?= (isset($errores["repassword"])) ? $errores["repassword"] : ""?></small>
+                            </div>
                         </div>
                         <br>
                         <div class="img">
