@@ -44,7 +44,7 @@ if ($_POST) {
     if (count($errores) == 0) {
         
         //Instruccion del sql
-        $sql= "SELECT email, contraseña FROM users";
+        $sql= "SELECT email, contraseña, nombre FROM users";
 
         //Preparar el statement
         $stmt=$link->prepare($sql);
