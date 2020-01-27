@@ -61,31 +61,29 @@ form{
 }
 .names input{
     width: 100%;
-    height: auto;
+    height: 30px;
     border-radius: 15px;
     border: 1px solid #4469fd;
 }
-.first-name{
+.nombre{
     width: 50%;
 }
-.surname{
+.apellido{
     width: 50%;
 }
-.age{
-    width: 60%;
-}
-.gender{
+.div{
     width: 40%;
 }
+.div input{
+    height: 30px;
+}
 .correo{
-    width: 70%;
+    width: 100%;
 }
 .pass1{
-    width: 45%;
+    width: 60%;
 }
-.pass2{
-    width: 45%;
-}
+
 .age-gender{
     /*background-color: darkgoldenrod;*/
     width: 100%;
@@ -99,7 +97,7 @@ form{
 }
 .age-gender select{
     width: 100%;
-    height: auto;
+    height: 40px;
     border-radius: 15px;
     border: 1px solid #b97778;
 }
@@ -115,7 +113,7 @@ form{
 }
 .email1 input{
     width: 100%;
-    height: auto;
+    height: 30px;
     border-radius: 15px;
     border: 1px solid #b97778;
 }
@@ -141,7 +139,7 @@ form{
 }
 .pass input{
     width: 100%;
-    height: auto;
+    height: 30px;
     border-radius: 15px;
     border: 1px solid #b97778;
 }
