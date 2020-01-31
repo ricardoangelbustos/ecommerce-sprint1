@@ -1,150 +1,13 @@
 <?php
 
-$errores=[];
-$nombre="";
-$apellido="";
-$edad="";
+include("controllers/functions.php");
 $generos=[
     "h"=>"Hombre",
     "m"=>"Mujer",
     "o"=>"Otro",
 ];
-$email="";
-$password="";
-$repassword="";
-$imagen="";
-
-
-if (isset($_COOKIE["email"])) {
-    header("Location: userprofile.php");exit;
-}
-if ($_FILES) {
-    if ($_FILES["imagen"]["error"] != 0) {
-        $errores["imagen"]="Hubo un error al cargar la imagen de perfil <br>";
-    }
-    else {
-        $ext= pathinfo($_FILES["imagen"]["name"], PATHINFO_EXTENSION);
-        
-        if ($ext != "jpg" && $ext != "jpeg" && $ext != "png") {
-            $errores["imagen"]="La imagen de perfil debe ser jpg, jpeg o png <br>";
-        }
-        else {
-            move_uploaded_file($_FILES["imagen"]["tmp_name"], "imagen." . $ext);
-        }   
-    }
-}
-
-
-if ($_POST) {
-    if (isset($_POST["nombre"])) {
-        if(empty($_POST["nombre"])){
-            $errores["nombre"] = "El campo nombre es obligatorio";
-        }
-        elseif (!ctype_alpha($_POST["nombre"])){
-            $errores["nombre"]="El campo nombre debe ser alfabetico";
-        }
-        elseif (empty($_POST["nombre"]) || strlen($_POST["nombre"]) <= 2){
-            $errores["nombre"]="Debe contener mas de dos letras";
-        }
-        else {
-            $nombre=$_POST["nombre"];
-        }
-    }
-    if (isset($_POST["apellido"])) {
-        if(empty($_POST["apellido"])){
-            $errores["apellido"] = "El campo apellido es obligatorio";
-        }
-        elseif (!ctype_alpha($_POST["apellido"])){
-            $errores["apellido"]="El campo apellido debe ser alfabetico";
-        }
-        elseif (empty($_POST["apellido"]) || strlen($_POST["apellido"]) <= 2){
-            $errores["apellido"]="Debe contener mas de dos letras";
-        }
-        else {
-            $apellido=$_POST["apellido"];
-        }
-    }
-    if (isset($_POST["edad"])) {
-        if(empty($_POST["edad"])){
-            $errores["edad"] = "El campo edad es obligatorio";
-        }
-        elseif (!is_numeric($_POST["edad"])){
-            $errores["edad"]="El campo edad debe ser numerico";
-        }
-        elseif (($_POST["edad"]<18) || ($_POST["edad"]>99)) {
-            $errores["edad"]="La edad debe estar entre 18 y 99";
-        }
-        else {
-            $edad=$_POST["edad"];
-        }
-    }
-    if (isset($_POST["email"])) {
-        if (empty($_POST["email"])) {
-            $errores["email"]= " El campo email es obligatorio";
-        }
-        elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-            $errores["email"]="No es un email valido";
-        }
-        else {
-            $email=$_POST["email"];
-        }
-    }
-    if (isset($_POST["password"])) {
-        if (empty($_POST["password"])) {
-            $errores["password"]= "El campo contraseña es obligatorio";
-        }
-        elseif (strlen($_POST["password"])<=7) {
-            $errores["password"]= "La contraseña debe contener mas de 8 caracteres";
-        }
-        elseif (($_POST["password"]) != ($_POST["repassword"])) {
-            $errores["password"]= "Las contraseñas no coinciden";
-        }
-        else {
-            $password=$_POST["password"];
-        }
-    }
-    if (isset($_POST["repassword"])) {
-        if (empty($_POST["repassword"])) {
-            $errores["repassword"]= "El campo repetir contraseña es obligatorio";
-        }
-        elseif (strlen($_POST["repassword"])<=7) {
-            $errores["repassword"]= "La contraseña debe contener mas de 8 caracteres";
-        }
-        elseif (($_POST["password"]) != ($_POST["repassword"])) {
-            $errores["repassword"]= "Las contraseñas no coinciden";
-        }
-        else {
-            $repassword=$_POST["repassword"];
-        }
-    }
-    if (isset($_POST["terms"])) {
-        $_POST["terms"] = "siterms";
-    }
-    else{
-        $_POST["terms"] = "noterms";
-    }
-    if (isset($_POST["news"])) {
-        $_POST["news"] = "sinews";
-    }
-    else{
-        $_POST["news"] = "nonews";
-    }
-    if (count($errores)==0) {
-        $usuarioParaGuardar=[
-            "nombre"=>trim($_POST["nombre"]),
-            "apellido"=>trim($_POST["apellido"]),
-            "edad"=>$_POST["edad"],
-            "email"=>$_POST["email"],
-            "genero"=>$_POST["genero"],
-            "password"=>password_hash($_POST["password"],PASSWORD_DEFAULT),
-            "terminos"=>$_POST["terms"],
-            "newsletter"=>$_POST["news"]
-        ];
-        $elUsuario=json_encode($usuarioParaGuardar);
-        file_put_contents("usuarios.json",$elUsuario.PHP_EOL,FILE_APPEND);
-        header("Location: login.php");
-    }
-}
+$arrayErrores="";
+$arrayErrores=validarRegistro($_POST);
 
 ?>
 <!DOCTYPE html>
@@ -176,64 +39,66 @@ if ($_POST) {
                 </h1>
             </div>
             <section>
-                <div class="register">
+            <div class="register">
                     <form action="register.php" method="POST" enctype="multipart/form-data">
                         <br>
                         <div class="names">
-                            <div class="first-name">
-                                <input id="name" type="text" name="nombre" value="<?=$nombre?>" placeholder="NOMBRE">
-                                <small><?= (isset($errores["nombre"])) ? $errores["nombre"] : ""?></small>
+                            <div class="nombre">
+                                <input id="name" type="text" name="nombre" value="<?=persistirDato($arrayErrores, 'nombre');?>" placeholder="NOMBRE">
+                                <small><?= (isset($arrayErrores["nombre"])) ? $arrayErrores["nombre"] : ""?></small>
                             </div>
-                            <div class="surname">
-                                <input id="surname" type="text" name="apellido" value="<?=$apellido?>" placeholder="APELLIDO">
-                                <small><?= (isset($errores["apellido"])) ? $errores["apellido"] : ""?></small>
+                            <div class="apellido">
+                                <input id="surname" type="text" name="apellido" value="<?=persistirDato($arrayErrores, 'apellido');?>" placeholder="APELLIDO">
+                                <small><?= (isset($arrayErrores["apellido"])) ? $arrayErrores["apellido"] : ""?></small>
                             </div>
+                            
                         </div>
                         <br>
                         <div class="age-gender">
-                            <div class="age">
-                                <input class="edad" type="text" name="edad" id="age" value="<?=$edad?>" placeholder="EDAD">
-                                <small><?= (isset($errores["edad"])) ? $errores["edad"] : ""?></small>
+                            <div class="div">
+                                <input class="edad" type="text" name="edad" id="age" value="<?=persistirDato($arrayErrores, 'edad');?>" placeholder="EDAD">
+                                <small><?= (isset($arrayErrores["edad"])) ? $arrayErrores["edad"] : ""?></small>
                             </div>
-                            <div class="gender">
-                                <select class="" name="genero">
-                                    <?php foreach ($generos as $codigo => $genero) : ?>
-                                        <?php if ($_POST["genero"] == $codigo) : ?> 
-                                                <option value="<?=$codigo?>" selected> 
-                                                    <?=$genero?>
-                                                </option>
-                                            <?php else : ?>
-                                                <option value="<?=$codigo?>">
-                                                    <?=$genero?>
-                                                </option>
-                                        <?php endif; ?>
-                                    <?php endforeach;?>
-                                </select>
-                            </div>
+                                
+                            
+                            <select class="" name="genero">
+                                <?php foreach ($generos as $codigo => $genero) : ?>
+                                    <?php if ($_POST["genero"] == $codigo) : ?> 
+                                        <option value="<?=$codigo?>" selected> 
+                                            <?=$genero?>
+                                        </option>
+                                    <?php else : ?>
+                                        <option value="<?=$codigo?>">
+                                            <?=$genero?>
+                                        </option>
+                                    <?php endif; //Toda esta estrutura mantiene lo que se haya elegido en el select?>
+                                <?php endforeach;//este foreach asigna los codigos a cada casa?>
+                            </select>
                         </div>
                         <br>
                         <div class="email1">
                             <div class="correo">
-                                <input id="email" type="text" name="email" value="<?=$email?>" placeholder="EMAIL">
-                                <small><?= (isset($errores["email"])) ? $errores["email"] : ""?></small>
+                                <input id="email" type="text" name="email" value="<?=persistirDato($arrayErrores, 'email');?>" placeholder="EMAIL">
+                                <small><?= (isset($arrayErrores["email"])) ? $arrayErrores["email"] : ""?></small>
                             </div>
                         </div>
                         <br>
                         <div class="pass">
                             <div class="pass1">
-                                <input id="password" type="password" name="password" value="<?=$password?>" placeholder="CONTRASEÑA">
-                                <small><?= (isset($errores["password"])) ? $errores["password"] : ""?></small>
+                                <input id="password" type="password" name="password" value="<?=persistirDato($arrayErrores, 'password');?>" placeholder="CONTRASEÑA">
+                                <small><?= (isset($arrayErrores["password"])) ? $arrayErrores["password"] : ""?></small>
                             </div>
-                            <div class="pass2">
-                                <input id="password" type="password" name="repassword" value="<?=$repassword?>" placeholder="REPETIR CONTRASEÑA">
-                                <small><?= (isset($errores["repassword"])) ? $errores["repassword"] : ""?></small>
+                            <div class="pass1">
+                                <input id="password" type="password" name="repassword" value="<?=persistirDato($arrayErrores, 'repassword');?>" placeholder="REPETIR CONTRASEÑA">
+                                <small><?= (isset($arrayErrores["repassword"])) ? $arrayErrores["repassword"] : ""?></small>
                             </div>
+                            
                         </div>
                         <br>
                         <div class="img">
                             <label for="">Foto de perfil</label><br>
                             <input type="file" name="imagen" id="">
-                            <small><?= (isset($errores["imagen"])) ? $errores["imagen"] : ""?></small>
+                            <small><?= (isset($arrayErrores["imagen"])) ? $arrayErrores["imagen"] : ""?></small>
                         </div>    
                         <div class="checkboxes-button">
                             <input type="checkbox" name="terms" value="yes-terms">     Acepto los terminos y condiciones <br><br>

@@ -1,10 +1,7 @@
 <?php
 session_start();
-$nombre = "";
-if (!isset($_COOKIE["email"]) && !$_SESSION['email']) {
-    header("Location: login.php");exit;
-}
-$nombre = $_COOKIE["nombre"] ;
+include("controllers/functions.php");
+$nombre=redireccion($_COOKIE, $_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="en">

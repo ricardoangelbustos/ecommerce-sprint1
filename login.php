@@ -1,60 +1,11 @@
 <?php
-session_start();
-$errores=[];
-$email="";
-$password="";
-$nombres=[];
-$usuariosGuardados=[];
-$usuarioFinal=[];
-$username=[];
-if (isset($_COOKIE["email"])) {
-    header("Location: userprofile.php");exit;
-}
-if ($_POST) {
-    if (isset($_POST["email"])) {
-        if (empty($_POST["email"])) {
-            $errores["email"]= "El campo email es obligatorio";
-        }
-        elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-            $errores["email"]="No es un email valido";
-        }
-        else {
-            $email=$_POST["email"];
-        }
-    }
-    if (isset($_POST["password"])) {
-        if (empty($_POST["password"])) {
-            $errores["password"]= "El campo contraseña es obligatorio";
-        }
-        elseif (strlen($_POST["password"])<=7) {
-            $errores["password"]= "La contraseña debe contener mas de 8 caracteres";
-        }
-    }
-    if (count($errores) == 0) {
-        $usuariosGuardados = file_get_contents('usuarios.json');
-        $usuariosGuardados = explode(PHP_EOL, $usuariosGuardados);
-        array_pop($usuariosGuardados);
-        foreach ($usuariosGuardados as $usuario) {
-            $usuarioFinal=json_decode($usuario,true);
-            if ($usuarioFinal['email'] == $_POST['email'] && password_verify($_POST['password'],$usuarioFinal['password'])) {
-                //aqui si lo logeo 
-                $_SESSION['email'] = $usuarioFinal['email'];
-                setcookie('nombre',$usuarioFinal['nombre'],time() + 60*60*24*30);
-                if (isset($_POST['recordarme'])) {
-                  // creo la cookie de mantenerme logeado
-                  setcookie('email',$usuarioFinal['email'],time() + 60*60*24*30);
-                }
-                //por ahora redirecciono a la misma vista 
-                header('Location:userprofile.php');
-            }
-            else{
-                $errores["password"]= "El usuario o la contraseña no existen";
-            }
-        }
-    }
-}
 
+session_start();
+include("controllers/functions.php");
+$arrayErrores="";
+$arrayErrores=validarLogin($_POST);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,20 +35,20 @@ if ($_POST) {
                 </h1>
             </div>
             <section>
-                <div class="container-1">
+            <div class="container-1">
                     <br><br>
                     <form action="login.php" method="POST">
                         <div class="email1">
-                            <div class="correo">
+                            <div class="div">
                                 <input id="email" type="text" name="email" value="" placeholder="EMAIL">
-                                <small><?= (isset($errores["email"])) ? $errores["email"] : "" ?></small>
+                                <small><?= (isset($arrayErrores["email"])) ? $arrayErrores["email"] : "" ?></small>
                             </div>
                         </div>
                         <div class="password-login">
-                            <div class="pass1">
+                            <div class="div">
                                 <input id="password" type="password" name="password" value="" placeholder="CONTRASEÑA">
-                                <small><?= (isset($errores["password"])) ? $errores["password"] : "" ?></small>
-                                <small><?= (isset($errores["ingreso"])) ? $errores["ingreso"] : "" ?></small>
+                                <small><?= (isset($arrayErrores["password"])) ? $arrayErrores["password"] : "" ?></small>
+                                <small><?= (isset($arrayErrores["ingreso"])) ? $arrayErrores["ingreso"] : "" ?></small><!--BORRAR ESTO-->
                             </div>
                         </div>
                         <div class="forget">
@@ -112,6 +63,7 @@ if ($_POST) {
                             <label class="form-check-label" for="recordarme">Recordarme como usuario</label>
                         </div>
                         <div class="button-img">
+                            <!-- <a href="#"><img src="img/right-arrow.svg" alt="right-arrow"></a> -->
                             <input type="image" src=img/right-arrow.svg alt="right-arrow">
                         </div>
                     </form>
