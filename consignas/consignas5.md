@@ -1,5 +1,5 @@
 # E-commerce
-Sprint 4 del proyecto integrador de Digital House. Entrega 30/01.
+Sprint 5 del proyecto integrador de Digital House. Entrega 5/03.
 
 <h2>Objetivo</h2>
 
