@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS abm;
+
+USE abm;
+CREATE TABLE `productos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `talle` varchar(50) NOT NULL,
+  `precio` varchar(50) NOT NULL,
+  `descripcion` varchar(50) NOT NULL,
+  `cantidad` varchar(50) NOT NULL
+);
+
+ALTER TABLE `productos`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `productos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
